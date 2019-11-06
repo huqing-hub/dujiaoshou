@@ -1,0 +1,167 @@
+<!--pages/usercenter/index/index.wxml-->
+
+<myheader title="" btnIcon="home" is="{{false}}" bind:headerBack="headerBack"></myheader>
+<view class="body_content">
+  <!-- 学生 -->
+  <view class="bodys" wx:if="{{utype!=3}}">
+    <view class="header" style="background: url(http://pzrzmq0gg.bkt.clouddn.com/smallRoutineRes{{ utype==2 ? 'pic_card_golden.png' : 'pic_card_gray.png'}});">
+      <view class="header_top ">
+        <view class="flex">
+          <view class="flex1 flex-col">
+            <!-- <text class="login" bindtap="blank" data-index="/userStart/login/login">{{ulogin ? userdata.userNickname : '点击登录'}}</text> -->
+            <open-data type="userNickName" class="login" ></open-data>
+            <text class="card_type" wx:if="{{utype==2}}">独角兽卡</text>
+            <text class="time_end" wx:if="{{utype==2}}"></text>
+          </view>
+          <!-- <image class="user_head" src="{{userdata.userAvatar==null ? 'https://img2.woyaogexing.com/2019/11/04/9c0d35d66e384ba882891ba69ec078c1!400x400.jpeg' : userdata.userAvatar}}" wx:if="ulogin"></image> -->
+          <!-- wx:if="{{!ulogin}}" -->
+          <view class="user_head">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+      </view>
+      <!-- 未购买 -->
+      <view class="flex-ali no_pay" wx:if="{{utype==1}}">
+        <text class="flex1">您尚未购买独角兽卡</text>
+        <button class="no_paybt flex-cen" bindtap="blank" data-index="/fill_info/fill_info">立即购买</button>
+      </view>
+      <!-- 已购买 -->
+      <view class="flex-ali yes_pay" wx:if="{{utype==2}}">
+        <view class="flex1">
+          <text class="yes_pay_num">{{userdata.token}}</text>
+          <text class="yes_pay_unit">U点</text>
+          <image src="./../../../assets/static/ic_arrowRight_golden.png" style="width:15rpx;height:24rpx;"></image>
+        </view>
+        <!--  -->
+        <button class="no_paybt flex-cen" bindtap="blank" data-index="top-up/top-up">充值</button>
+      </view>
+      <!--未注册-->
+      <text class="header_title" wx:if="{{utype==0}}">使用手机号码登录unicorn即可成为会员</text>
+    </view>
+  </view>
+  <!-- 老师 -->
+  <view class="bodys" wx:if="{{utype==3}}">
+    <view class="header">
+      <view class="header_top ">
+        <view class="flex">
+          <view class="flex1 flex-col">
+            <text class="login ">{{userdata.userNickname}}</text>
+            <text class="teacher_time">{{userdata.yearClassHour}}年{{userdata.monthClassHour}}月{{userdata.userCreateTime}}日加入UNICORN</text>
+          </view>
+          <view class="user_head">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <!-- <image src="https://img2.woyaogexing.com/2019/10/08/0002034dd4724353964d1df29d625e5a!400x400.jpeg"></image> -->
+        </view>
+      </view>
+      <view class="teacher_c flex-ali">
+        <view class="flex1 flex-cen-col" style="border-right:rgba(95,96,113,1) solid 1px;">
+          <text class="num">{{userdata.monthClassHour}}</text>
+          <text class="txt">本月完成课时</text>
+        </view>
+        <view class="flex1 flex-cen-col">
+          <text class="num">{{userdata.yearClassHour}}</text>
+          <text class="txt">本年完成课时</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!-- 菜单 -->
+  <view class="meun" wx:if="{{utype!=3}}">
+    <!-- <view class="flex-ali">
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_myHmoepage.png"></image>
+        <text>我的作品</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_videoDatebase.png"></image>
+        <text>视频库</text>
+      </view>
+      
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_cardChange.png"></image>
+        <text>会员商品</text>
+      </view>
+       <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_cardChange.png"></image>
+        <text>卡券兑换</text>
+      </view>
+    </view> -->
+    <view class="flex-ali">
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_store.png"></image>
+        <text>我的关注</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_call.png"></image>
+        <text>呼叫顾问</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_credit.png" bindtap="blank" data-index="myintegral/myintegral"></image>
+        <text bindtap="blank" data-index="myintegral/myintegral">我的积分</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_invite.png" bindtap="blank" data-index="invitation/invitation"></image>
+        <text bindtap="blank" data-index="invitation/invitation">邀请好友</text>
+      </view>
+    </view>
+    <view class="flex-ali">
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_cardChange.png" bindtap="blank" data-index="couponlist/couponlist"></image>
+        <text bindtap="blank" data-index="couponlist/couponlist">卡券兑换</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1"></view>
+      <view class="meun_list flex-cen-col flex1"></view>
+      <view class="meun_list flex-cen-col flex1"></view>
+    </view>
+  </view>
+  <!-- 老师菜单 -->
+  <view class="meun meunm" wx:if="{{utype==3}}">
+    <view class="flex-ali">
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_myHmoepage.png"></image>
+        <text>我的主页</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_videoDatebase.png"></image>
+        <text>视频库</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_videoDatebase.png"></image>
+        <text>教师库</text>
+      </view>
+      <view class="meun_list flex-cen-col flex1">
+        <image src="./../../../assets/static/ic_invite.png"></image>
+        <text>邀请好友</text>
+      </view>
+
+    </view>
+  </view>
+  <view class="set_list">
+    <view class="flex-ali tab-nav-item tab-active" bindtap="blank" data-index="myorder/myorder" wx:if="{{utype!=3}}">
+      <text class="flex1">我的订单</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+    <view class="flex-ali tab-nav-item tab-active" bindtap="blank" data-index="Addressmanagement/Addressmanagement" wx:if="{{utype!=3}}">
+      <text class="flex1">地址管理</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+    <view class="flex-ali tab-nav-item tab-active" bindtap="blank" data-index="Changephone/Changephone">
+      <text class="flex1">手机号码</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+    <view class="flex-ali tab-nav-item tab-active" bindtap="blank" data-index="Setup/Setup">
+      <text class="flex1">个人设置</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+    <view class="flex-ali tab-nav-item tab-active" bindtap="blank" data-index="AboutUs/AboutUs">
+      <text class="flex1">关于我们</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+    <view class="flex-ali " bindtap="blank" data-index="useragreement/useragreement">
+      <text class="flex1">用户协议</text>
+      <image src="./../../../assets/static/ic_arrowRight.png"></image>
+    </view>
+  </view>
+</view>
+<Tabbar usertype="{{useris}}"></Tabbar>

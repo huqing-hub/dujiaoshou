@@ -1,0 +1,116 @@
+<!--pages/Aboutclass/Aboutclass.wxml-->
+<wxs src="./time.wxs" module="tools" />
+<showModal showModalOption="{{showModalOption}}" bindoperation="operation"></showModal>
+<view class="more flex-cen" wx:if="{{payalert}}"></view>
+<view class="pay_content" wx:if="{{payalert}}">
+  <view class="choose">
+    <view class="flex-ali">
+      <text class="title flex1">确定支付</text>
+      <image src="./../../../assets/static/popview_ic_close.png" style="width:26rpx;height:26rpx;" bindtap="close"></image>
+    </view>
+    <text class="balance">{{paydata.coursePrice}}U点</text>
+    <!--会员-->
+    <view wx:if="{{paymeet>1||paymeet==1}}">
+      <view class="cards this flex-ali">
+        <image src="./../../../assets/static/pic_effective.png" style="margin-right:39rpx;"></image>
+        <view class="flex-col cards_content flex1">
+          <text>蓝巫师卡</text>
+          <text>剩余{{udata.token}}U点</text>
+        </view>
+        <text class="hot flex-cen">有效</text>
+      </view>
+    </view>
+    <!--没会员-->
+    <view wx:if="{{paymeet==0}}">
+      <view class="cards onpay flex-ali">
+        <image src="./../../../assets/static/pic_ineffective.png" style="margin-right:39rpx;"></image>
+        <view class="flex-col cards_content flex1">
+          <text>蓝巫师卡</text>
+          <text>剩余100U点</text>
+        </view>
+        <text class="hot flex-cen">U点不足</text>
+      </view>
+    </view>
+     <navigator url="/pages/fill_info/fill_info" hover-class="navigator-hover" wx:if="{{paymeet==0}}">
+      <button class="top-up" >去开通</button>
+    </navigator>
+    <navigator url="/pages/top-up/top-up" hover-class="navigator-hover" wx:if="{{paymeet==3}}">
+      <button class="top-up" >去充值</button>
+    </navigator>
+    <navigator url="/pages/Paymentverification/Paymentverification" hover-class="navigator-hover" wx:if="{{paymeet==2}}">
+      <button class="top-up" >立即支付</button>
+    </navigator>
+  </view>
+</view>
+<!--弹窗end-->
+<scroll-view class="content">
+  <view class="top">
+    <view class="flex-ali tab_list">
+      <view class="flex1 flex-cen" data-type="0" bindtap="tabchoose">
+        <text class="tab {{ tabtype==0 ? 'tab-nav-item tab-active' : ''}}">课程约课</text>
+      </view>
+      <view class="flex1 flex-cen" data-type="1" bindtap="tabchoose">
+        <text class="tab {{ tabtype==1 ? 'tab-nav-item tab-active' : ''}}">教师约课</text>
+      </view>
+    </view>
+    <!--地图选择-->
+    <navigator wx:if="{{tabtype==0&&storeadd!=null}}" url="/pages/About/Selectaddress/Selectaddress" hover-class="navigator-hover">
+      <view class="adds flex-ali">
+        <image src="./../../../assets/static/ic_location.png" style="width:35rpx;height:39rpx;"></image>
+        <view class="flex-col flex1">
+          <text>为您智能推荐：{{storeadd[0].storeName}}</text>
+          <text>{{storeadd[0].storeAddress}}</text>
+        </view>
+        <image src="./../../../assets/static/ic_arrowRight.png" style="width:15rpx;height:24rpx;"></image>
+      </view>
+    </navigator>
+    <!--老师选择-->
+    <navigator wx:if="{{tabtype==1}}" url="/pages/About/Chooseteacher/Chooseteacher?storeid={{storeadd[0].storeId}}" hover-class="navigator-hover">
+      <view class="teacher flex-ali  ">
+        <image class="" src="{{teacherdata[0].teacherAvatar}}"></image>
+        <view class="flex-col flex1">
+          <view class="flex-ali">
+            <text class="name">{{teacherdata[0].teacherName}}</text>
+            <text class="price">{{teacherdata[0].coursePrice}} U</text>
+          </view>
+          <text class="type">{{teacherdata[0].teacherContent}}</text>
+        </view>
+        <image src="./../../../assets/static/ic_arrowRight.png" style="width:15rpx;height:24rpx;margin-right: 0rpx;"></image>
+      </view>
+    </navigator>
+    <view class="flex-ali " style="padding-bottom:29rpx;">
+      <view class="flex1 time_list flex-cen-col {{tab==idx ? 'tab-item tab-active ' : ''}}" wx:for="{{storet}}" wx:for-index="idx" wx:for-item="ditem">
+        <text class="{{tab==idx ? 'this theme_txt' : 'no'}}" bindtap="cut" data-index="{{idx}}">{{tools.formatTime(ditem.courseTime,'ms',idx)}}</text>
+        <!-- <text class="{{tab==idx ? 'this theme_txt' : 'no'}}" bindtap="cut" data-index="{{idx}}">约满</text> -->
+      </view>
+    </view>
+  </view>
+  <view class="bottom">
+    <!-- <view class="card flex">
+      <image src=""></image>
+      <view class="flex-col">
+        <text class="title">14:00-16:00 爵士舞基础课程</text>
+        <text class="name">老师：莎莎</text>
+        <text class="satuts this theme_txt">差 5 人约满</text>
+      </view>
+      <button class="pre theme">100U点预约</button>
+    </view> -->
+    <view class="card flex" wx:for="{{storedata}}" wx:for-index="idx" wx:for-item="ditem">
+      <image src="{{ditem.courseImage}}"></image>
+      <view class="flex-col">
+        <text class="title">{{tools.time(ditem.startTime)}} - {{tools.time(ditem.endTime)}} {{ditem.courseName}}课程</text>
+        <text class="name">老师：{{ditem.teacherName}}</text>
+        <text class="satuts this theme_txt" wx:if="{{ditem.states!=1}}">差 {{ditem.maxCount-ditem.currentCount}} 人约满</text>
+        <text class="satuts" wx:if="{{ditem.states==1}}">已约满</text>
+      </view>
+      <!-- <navigator url="/pages/About/Aboutsuccess/Aboutsuccess" class="pre" hover-class="navigator-hover" wx:if="{{ditem.states==0}}"> -->
+      <button class="pre {{ditem.states==0 ? 'theme' : ''}}" bindtap="pay" data-index="{{ditem}}" wx:if="{{ditem.states==0}}">{{ditem.coursePrice}}U点预约</button>
+      <!-- </navigator> -->
+    </view>
+
+    <view class=" " style="height:400rpx;">
+
+    </view>
+  </view>
+</scroll-view>
+<Tabbar usertype="{{useris}}" oData="{{[]}}"></Tabbar>

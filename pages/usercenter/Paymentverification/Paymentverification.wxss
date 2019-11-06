@@ -1,0 +1,12 @@
+/* pages/usercenter/Paymentverification/Paymentverification.wxss */
+.title,.txt{line-height:36rpx;display: block;margin: 0rpx auto;text-align: center;}
+page{background-color: #fff;}
+.title{font-size:34rpx;font-weight:bold;color:rgba(49,49,52,1);padding: 118rpx 0rpx 28rpx 0rpx;}
+.txt{font-size:28rpx;font-weight:500;color:rgba(148,151,163,1);}
+
+input{width:70rpx;border-radius:1px;margin: 0rpx 10rpx;border-bottom:rgba(223,223,223,1) 2rpx solid;text-align: center;margin-top: 10rpx;}
+ .this{border-bottom:rgba(50,51,68,1) 2rpx solid !important;}
+
+.prompt{font-size:24rpx;font-weight:500;color:rgba(148,151,163,1);line-height:36rpx;display: block;padding-top: 43rpx;text-align: center;}
+
+button{background:rgba(50,51,68,1);border-radius:10rpx;font-size:32rpx;font-weight:bold;color:rgba(255,255,255,1);margin: 119rpx 30rpx 0rpx 30rpx;}

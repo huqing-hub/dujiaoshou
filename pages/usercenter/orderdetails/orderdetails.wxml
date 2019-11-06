@@ -1,0 +1,84 @@
+<!--pages/usercenter/orderdetails/orderdetails.wxml-->
+<view class="state">
+  <text class="state_title">订单已发货</text>
+  <text class="state_sig">预计2019年11月23日到达您手中</text>
+</view>
+<view class="user_add">
+  <view class="adds flex-ali">
+    <image src="./../../../assets/static/ic_location.png" style="width:35rpx;height:39rpx;"></image>
+    <view class="flex1">
+      <text class="warehouse">Unicorn仓库</text>
+      <text class="warehouse_add">湖南省长沙市岳麓区咸嘉湖路72号西湖文化园</text>
+      <text class="time">2019-10-29  17:02:34</text>
+    </view>
+    <image src="./../../../assets/static/ic_arrowRight.png" style="width:15rpx;height:24rpx;"></image>
+  </view>
+  <view class="adds flex-ali">
+    <image src="./../../../assets/static/ic_location.png" style="width:35rpx;height:39rpx;"></image>
+    <view class="flex1">
+      <text class="name">张琴波</text>
+      <text class="phone">17608480841</text>
+      <text class="txt">湖南省长沙市岳麓区潇湘中路万科金域缇香小区5冻1304</text>
+    </view>
+  </view>
+
+</view>
+<view class="goods">
+  <navigator url="/pages/usercenter/orderdetails/orderdetails" hover-class="navigator-hover" class="flex">
+    <image src="https://img2.woyaogexing.com/2019/10/15/ed47a235060e40689d18f20cb5fac5d2!400x400.jpeg"></image>
+    <view class="">
+      <text class="title">蚂蚁潮流短袖</text>
+      <text class="gauge">商品简介商品简介商品简介商品简介商品简介商品简</text>
+      <text class="icon" style="display: inline-block;">全国包邮</text>
+    </view>
+  </navigator>
+  <view class="flex-ali detailed">
+    <text class="title">商品总价</text>
+    <text class="flex1 num txt_right">¥899</text>
+  </view>
+  <view class="flex-ali detailed">
+    <text class="title">运费</text>
+    <text class="flex1 num txt_right">¥899</text>
+  </view>
+  <view class="flex-ali detailed">
+    <text class="title">订单总价</text>
+    <text class="flex1 num txt_right">¥899</text>
+  </view>
+  <text class="tatol txt_right">共1件商品   实付：672U点</text>
+</view>
+<view class="detail">
+  <view class="detail_txt flex-ali">
+    <text class="title">获取积分：</text>
+    <text class="txt flex1">89</text>
+  </view>
+  <view class="detail_txt flex-ali">
+    <text class="title">订单编号：</text>
+    <text class="txt flex1">2019-10-29  17:02:34</text>
+  </view>
+  <view class="detail_txt flex-ali">
+    <text class="title">支付编号：</text>
+    <text class="txt flex1">2019-10-29  17:02:34</text>
+  </view>
+  <view class="detail_txt flex-ali">
+    <text class="title">创建时间：</text>
+    <text class="txt flex1">2019-10-29  17:02:34</text>
+  </view>
+  <view class="detail_txt flex-ali">
+    <text class="title">付款时间：</text>
+    <text class="txt flex1">2019-10-29  17:02:34</text>
+  </view>
+  <view class="detail_txt flex-ali">
+    <text class="title">发货时间：</text>
+    <text class="txt flex1">2019-10-29  17:02:34</text>
+  </view>
+</view>
+<view style="height:100rpx;"></view>
+<view class="footer flex-ali">
+  <view class="flex1">
+    <button class="service flex-cen" open-type="contact">联系客服</button>
+  </view>
+  <navigator url="/pages/usercenter/logistics/logistics" hover-class="navigator-hover">
+    <button class="service flex-cen">查看物流</button>
+  </navigator>
+  <button class="service theme_border flex-cen theme_txt">确认收货</button>
+</view>

@@ -1,0 +1,94 @@
+<!--pages/course/Coursedetails/Coursedetails.wxml-->
+<wxs src="../../../utils/time.wxs" module="tools" />
+<scroll-view>
+<swiper indicator-dots="{{true}}" class="video" indicator-color="#ffffff" autoplay="true" circular="true" >
+      <block wx:for="{{coursedata.courseImage}}" wx:key="banner">
+        <swiper-item>
+          <image src='{{item}}'mode="aspectFill" style="width:100%;height:100%;" />
+        </swiper-item> 
+      </block>
+    </swiper>
+  <!-- courseImage -->
+  <view class="coursetitle flex-ali">
+    <text>{{coursedata.courseTitle}}课程</text>
+    <text class="icon theme">{{statustxt[coursedata.status]}}</text>
+  </view>
+  <view class="teacher_details">
+    <view class="teacher flex-ali">
+      <image src="{{coursedata.teacherAvatar}}"></image>
+      <text class="txt">{{coursedata.teacherName}}老师</text>
+      <star class="flex1" is="{{true}}" starOption="{{starOption}}" style="text-align: right;"></star>
+      <text class="score">{{coursedata.teacherScore}}分</text>
+    </view>
+    <text class="teacher_text">{{coursedata.teacherDesc}}{{coursedata.teacherSpecial}}</text>
+  </view>
+  <view class="list">
+    <view>
+      <view class="list_c flex">
+        <text class="title flex1">上课地点</text>
+        <text class="lasttext">{{coursedata.storeName}}</text>
+        <image src=""></image>
+      </view>
+    </view>
+    <view>
+      <view class="list_c flex">
+        <text class="title flex1">上课时间</text>
+        <text class="lasttext">{{tools.dateFormat(coursedata.courseTime)}}</text>
+      </view>
+    </view>
+    <view>
+      <view class="list_c flex">
+        <text class="title flex1">课程费用</text>
+        <text class="lasttext">{{coursedata.coursePrice}}U点</text>
+      </view>
+    </view>
+    <navigator url="./../Somecode/Somecode?id={{coursedata.courseId}}" hover-class="other-navigator-hover"  wx:if="{{coursedata.status==2}}">
+      <view>
+        <view class="list_c flex">
+          <text class="title flex1">查看预约码</text>
+          <image src=""></image>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="Jane">
+    <text class="title">课程简介</text>
+    <text class="txt">
+    {{coursedata.storeName}}
+    </text>
+    <view class="img_list">
+      <image></image>
+    </view>
+  </view>
+  <view class="video_c">
+    <text class="title">本节课程音乐/视频</text>
+    <view class="flex">
+      <view class="video_img" style="background-image: url({{coursedata.courseImage[tcourese.index]}});"> </view>
+      <view class="video_list flex1">
+        <text>{{tcourese.data.className}}</text>
+        <view class="flex-ali">
+          <image src="./../../../assets/static/ic_time.png" style="width:24rpx;height:24rpx;margin-right:16rpx;"></image>
+          <text></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="progress">
+    <text class="title">课程进度（{{tcourese.index}}/{{coursedata.classProgress.length}}）</text>
+    <view class="flex-ali"  wx:for="{{coursedata.classProgress}}" wx:for-index="idx" wx:for-item="item" >
+      <view class="line"></view>
+      <image src="./../../../assets/static/{{item.status!=2 ? 'classDetail_ic_nor.png' : 'classDetail_ic_sel.png'}}" class="icon {{ item.status==2 ? 'this' : ''}}"></image>
+      <text>{{item.className}}第{{idx+1}}节</text>
+      <image src="./../../../assets/static/classDetail_ic_arrowLeft.png" style="width:16rpx;height:21rpx;margin-left:20rpx;" wx:if="{{item.status==2}}" ></image>
+      <text class="progressbt flex-cen pink" wx:if="{{item.status==2}}" >本节学习</text>
+    </view>
+    <!-- <view class="flex-ali">
+      <view class="line"></view>
+      <image src="./../../../assets/static/" class="this icon"></image>
+      <text class="this">GIMME ON UP第一节</text>
+      
+    </view> -->
+  </view>
+  <view style="height:94rpx;"></view>
+</scroll-view>
+<button class="theme" bindtap="cancel" wx:if="{{coursedata.status==2}}">取消预约</button>

@@ -1,0 +1,4 @@
+/* pages/usercenter/AboutUs/AboutUs.wxss */
+.image{height:380rpx;background:rgba(50,51,68,1);width: 100%;background-size: 100%;}
+.content{display: block;padding: 50rpx 40rpx;font-size:28rpx;font-weight:500;color:rgba(0,0,0,1);line-height:44rpx;}
+page{background-color: #fff;}

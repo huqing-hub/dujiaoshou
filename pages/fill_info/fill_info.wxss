@@ -1,0 +1,121 @@
+/* pages/fill_info/fill_info.wxss */
+page{
+	background-color: white;
+}
+.whole{
+	padding-bottom: 160rpx;
+	position: relative;
+}
+.rowBox{
+	width:674rpx;
+	margin: 0 auto;
+	margin-bottom: 20rpx;
+}
+.txt1,.txt2{
+	display: block;
+	margin-top: 37rpx;
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(148,151,163,1);
+}
+.txt2{
+	margin-top: 26rpx;
+	line-height: 36rpx;
+}
+.rowIpt{
+	width:100vw;
+	display: flex;
+	height: 100rpx;
+	align-items: center;
+	border-bottom:1rpx solid  rgba(235,235,235,1);
+	padding: 0 30rpx;
+	box-sizing: border-box;
+}
+.lables{
+	width: 146rpx;
+	font-size:30rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:#313134;
+	border-right: 1rpx solid rgba(235,235,235,1);
+}
+.setfont{
+	font-size:30rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(199,201,207,1);
+}
+.ipts{
+	flex: 1;
+	padding-left:28rpx;
+	box-sizing: border-box; 
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+}
+.codeIpt{
+	width: 300rpx;
+	/* background-color: red; */
+}
+.getcode{
+	width:180rpx;
+	height:60rpx;
+	border:2rpx solid rgba(199,201,207,1);
+	border-radius:30rpx;
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(49,49,52,1);
+	line-height: 60rpx;
+	text-align: center;
+}
+.tips{
+	width: 674rpx;
+	margin: 0 auto;
+	height: 90rpx;
+	line-height: 90rpx;
+	font-size:24rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(148,151,163,1);
+	background-color:rgba(249,251,252,1); 
+}
+.txt4{
+	font-size:30rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(199,201,207,1);	
+}
+.icons{
+	position: absolute;
+	right: 0;
+	width: 20rpx;
+	height: 12rpx;
+	z-index: 9;
+	background: center no-repeat;
+	background-size: cover;
+}
+.footBox{
+	width:690rpx;
+	height:90rpx;
+	background:rgba(50,51,68,1);
+	border-radius:10rpx;
+	text-align: center;
+	line-height: 90rpx;
+	position: absolute;
+	left: 50%;
+	bottom: 26rpx;
+	transform: translateX(-50%);
+	font-size:32rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+}
+._txt1{
+	font-size:30rpx !important;
+	font-family:PingFang SC;
+	font-weight:500 !important;
+	color:rgba(49,49,52,1) !important;
+}

@@ -1,0 +1,26 @@
+<!--pages/course/schedule/schedule.wxml-->
+<wxs src="../../../utils/time.wxs" module="tools" />
+<scroll-view>
+  <view class="content {{listdata.length==0 ? 'flex-cen cflex' : ''}}">
+    <text class="ts">没有课程</text>
+    <view class="m-top" wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="item" >
+      <view class="b_left"></view>
+      <view class="score_d flex-ali" style="{{item.status==2 ? 'left:-21rpx' : 'left:-15rpx'}};">
+        <image src="./../../../assets/static/{{item.status==2 ? 'classSchedule_nor_ic_now.png' : 'classSchedule_nor_pic_completed.png'}}" style="width: 42rpx;height: 42rpx;"></image>
+        <text class="this">{{tools.time(item.startTime)}}</text>
+      </view>
+      <view class="c_right this" >
+        <view class="score_m ">{{tools.formatTime(item.startTime,'ms','3')}}</view>
+        <navigator url="./../Coursedetails/Coursedetails?id={{item.courseId}}&storeId={{item.storeId}}" hover-class="other-navigator-hover" class="score_c flex-ali">
+          <view class="score_img" style="background-image: url({{item.courseImage}});"></view>
+          <view class="flex1">
+            <text class="title">{{tools.time(item.startTime)}} - {{tools.time(item.endTime)}} {{item.courseName}}课程</text>
+            <text class="name">老师：{{item.teacherName}}</text>
+            <text class="name">{{item.status == 1 ? '已完成' : '已预约'}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+<Tabbar usertype="{{useris}}" oData="{{[]}}" ></Tabbar>

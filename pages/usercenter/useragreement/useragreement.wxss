@@ -1,0 +1,11 @@
+/* pages/usercenter/useragreement/useragreement.wxss */
+.txt{padding: 48rpx 30rpx;display: block;font-size:26rpx;
+font-weight:500;
+color:rgba(148,151,163,1);
+line-height:36rpx;}
+page{background-color: #fff;}
+.title{font-size:30rpx;
+font-weight:500;
+color:rgba(50,51,68,1);
+line-height:36rpx;padding-top: 50rpx;display: block;}
+

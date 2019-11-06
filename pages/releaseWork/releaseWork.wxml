@@ -1,0 +1,18 @@
+<!--发布作品-->
+<view class="whole">
+	<view class="hander">
+		<input class="handInput" placeholder="输入一个让人眼前一亮的标题" placeholder-class="setstyle" bindinput="changeipt" maxlength="10"></input>
+	</view>
+	<view class="txtnum">{{ipttxt.length}}/10</view>
+	<view class="addPhoto">
+		<view class="centerbox">
+			<image mode="widthFix" src="{{STATICIMG}}/ic_upload.png" class="photo"></image>
+			<text class="addtxt">添加视频</text>
+		</view>
+	</view>
+	<view class="upPhoto theme">上传</view>
+	<view class="footTip">
+		<text>温馨提示：</text>
+		<text>发布视频到独角戏，让更多人看到你的风采，邀请好友点赞获得U点奖励！</text>
+	</view>
+</view>

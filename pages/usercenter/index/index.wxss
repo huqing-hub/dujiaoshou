@@ -1,0 +1,56 @@
+/* pages/usercenter/index/index.wxss */
+.body_content{background-color: RGBA(248, 250, 251, 1);}
+.bodys{background: rgba(50, 51, 68, 1);}
+.header{margin: 0rpx 30rpx;height:338rpx;border-radius:20rpx 20rpx 0px 0px;padding: 38rpx;background-size: 100% 100%;}
+.header_top .login{font-size:52rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);}
+.header_top>view>.user_head{width: 120rpx;height: 120rpx;border-radius: 50%;overflow: hidden;}
+.header_title{font-size:30rpx;margin-top:143rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);display: inline-block
+;}
+.meunm>view:first-child{margin-bottom: 0rpx !important;}
+
+.meun{background:rgba(255,255,255,1);padding: 47rpx 0rpx;}
+.meun>view:first-child{margin-bottom: 52rpx;}
+.meun_list>image{width: 50rpx;height: 50rpx;}
+.meun_list>text{padding-top: 33rpx;font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(116,116,125,1);}
+
+.set_list{margin: 20rpx 0rpx 45rpx 0rpx;}
+.set_list>view>image{width:15rpx;height:24rpx;}
+.set_list>view{padding: 40rpx 30rpx;background:rgba(255,255,255,1);}
+.set_list text{font-size:30rpx;
+font-weight:500;
+color:rgba(49,49,52,1);}
+
+/* tab-nav-item tab-active */
+.tab-nav-item{position: relative;}
+
+.tab-nav-item.tab-active:before {
+    width: 92%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -46%;
+    z-index: 4;
+    background:rgba(235,235,235,1);
+    
+}
+.badge:after, .tab-nav-item.tab-active:before, .tab-nav-item:not(:last-child):after, .tab-nav:after {
+    content: '';
+}
+
+.no_pay{margin-top:143rpx;}
+.no_pay>text{font-size:30rpx;font-weight:bold;color:rgba(255,255,255,1);}
+.no_paybt{width:160rpx;height:64rpx;border:2rpx solid rgba(135,98,48,1);border-radius:10rpx;font-size:30rpx;font-weight:bold;color:rgba(135,98,48,1);background-color: transparent;}
+
+.yes_pay{margin-top: 53rpx;}
+.yes_pay>view>text{padding-right: 17rpx;display: inline-block;}
+.yes_pay_num{font-size:58rpx;font-family:PingFang SC;font-weight:bold;color:rgba(135,98,48,1);}
+.yes_pay_unit{font-size:26rpx;font-family:PingFang SC;font-weight:bold;color:rgba(135,98,48,1);}
+
+.card_type{font-size:30rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);padding-top: 33rpx;}
+.time_end{font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(255,255,255,1);padding-top: 17rpx;}
+
+.teacher_time{font-size:24rpx;padding-top: 30rpx;font-weight:500;color:rgba(255,255,255,1);}
+.teacher_c{margin-top: 92rpx;}
+.teacher_c .num{font-size:48rpx;font-weight:bold;color:rgba(255,163,152,1);}
+.teacher_c .txt{font-size:22rpx;font-weight:500;color:rgba(255,255,255,1);padding-top: 30rpx;}

@@ -1,0 +1,25 @@
+<!--pages/usercenter/newphone/newphone.wxml-->
+<view class="container body ">
+  <view class="user">
+    <text class="binding_title">温馨提示：</text>
+    <text class="binding_txt">手机号码将是UNICORN识别您身份的重要凭证，请填写您常用的手机号码。</text>
+    <view class="input_title flex-ali">
+      <image src="./../../../assets/static/pic_phoneNumber.png" style="width:32rpx;height:40rpx;"></image>
+      <text>手机</text>
+    </view>
+    <input type="Number" placeholder="请输入新手机号码" placeholder-class="phone_pla" style="border-bottom: rgba(235,235,235,1) solid 1px;"></input>
+    <view class="input_title flex-ali" style="margin-top:48rpx;">
+      <image src="./../../../assets/static/pic_verificationCode.png" style="width:32rpx;height:40rpx;"></image>
+      <text>验证码</text>
+    </view>
+    <view class="code_content flex-ali">
+      <input type="Number" class="flex1" placeholder="请输入您的验证码" placeholder-class="phone_pla"></input>
+        <!-- <view class="tab-active"></view> -->
+      <button class="{{iscode ? 'code' : 'button'}}" bindtap="opencode" >{{ second==60 ? '获取验证码' : second+'s'}}</button>
+    </view>
+    <navigator url="/pages/usercenter/insuccess/insuccess" redirect="true"  hover-class="navigator-hover">
+      <button class="login_bt theme">完成</button>
+    </navigator>
+  </view>
+
+</view>

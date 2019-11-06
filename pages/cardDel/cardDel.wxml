@@ -1,0 +1,71 @@
+<!--pages/cardDel/cardDel.wxml-->
+<view class="whole">
+	<view class="handBox">
+		<view class="handimg" style="background-image:url({{STATICIMG}}/pic_card_golden.png)">
+			<view class="leftBox">
+				<text class="txt1 nowrap">哈哈哈哈哈哈哈</text>
+				<text class="txt2 nowrap">独角兽卡</text>
+				<text class="txt3 nowrap">2020年11月12日到期</text>
+				<view class="txt4 nowrap">
+					<text class="txt5">0</text>
+					<text class="txt6">u点</text>
+				</view>
+			</view>
+			<view class="rightBox">
+				<view style="background-image:url({{STATICIMG}}/test.jpg)" class="useImg"></view>
+				<view class="txt7">
+					<text style="margin-right:13rpx">U点使用记录</text> 
+					<image mode="widthFix" src="{{STATICIMG}}/ic_arrowRight_golden.png" class="righticon"></image>
+				</view>
+			</view>
+		</view>	
+		<view class="usepro">
+			UNICORN独角兽卡是Unicorn推出的一款针对于练习舞者的会员卡，此卡办理成功之后将作为舞者会员身份的识别和课程消费的重要凭证。
+		</view>
+	</view>
+	<view class="centerBox">
+		<text class="tips">持卡人信息</text>
+		<text class="infoList">手机号码：17608998765</text>
+		<text class="infoList">持卡人：张琴</text>
+		<text class="infoList">身份证：430725********4677</text>
+		<text class="infoList">性别：男 </text>
+		<text class="infoList">生日：1990/12/29</text>
+		<text class="infoList">地址：湖南省长沙市岳麓区潇湘中路万科金域缇香</text>
+	</view>
+	<view class="centerBox">
+		<text class="tips">会员权益</text>
+		<text class="infoList">1.享受90天课时或60节课程学习权益约课成功后将消费课程数，课时数将根据自然日逐日消减 </text>
+		<text class="infoList">2.获取每月个人舞蹈短视频并可获取上传至独角戏排行榜赢取免费课 程机会</text>
+		<text class="infoList">3.享受会员办卡定制大礼包</text>
+		<text class="infoList">4.可在此卡有效期内持卡免费获取俱乐部休闲饮品并可参与俱乐部组织的活动</text>
+		<text class="infoList">5.成为独角兽KOL，帮助独角兽发展壮大，推广办卡即可获取免费课程</text>
+	</view>
+	<view class="centerBox">
+		<text class="tips">如何使用</text>
+		<view class="infoList">
+			<view class="num">1</view>
+			<view class="setmar">使用小程序进行约课，每约一节课将消耗相应卡点</view>  
+		</view>
+		<view class="infoList">
+			<view class="num">2</view>
+			<view class="setmar">前往课表查看预约码</view> 
+		</view>
+		<view class="infoList">
+			<view class="num">3</view>
+			<view class="setmar">前往课表查看预约码</view> 
+		</view>
+		<view class="infoList">
+			<view class="num">4</view>
+			<view class="setmar">向老师出示预约码开始练习</view> 
+		</view>
+		<view class="infoList">
+			<view class="num">5</view>
+			<view class="setmar">针对本堂课程对老师进行匿名评分</view> 
+		</view>
+		<view class="infoList">
+			<view class="num">6</view>
+			<view class="setmar">完成学习</view> 
+		</view>
+	</view>
+	<view class="footBox theme">购买U点立即约课</view>
+</view>

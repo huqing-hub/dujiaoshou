@@ -1,0 +1,13 @@
+<!--pages/usercenter/insuccess/insuccess.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>更换成功</text>
+</view>
+
+<text class="success_prompt">请您牢记新的手机号码 ~</text>
+<text class="success_prompt">Unicorn将使用新的手机号码识别您的身份</text>
+
+
+<navigator url="/pages/usercenter/index/index" redirect="true" open-type="switchTab" hover-class="navigator-hover">
+  <button class="theme">好的，我知道了</button>
+</navigator>

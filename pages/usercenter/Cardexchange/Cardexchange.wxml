@@ -1,0 +1,32 @@
+<!--pages/usercenter/Cardexchange/Cardexchange.wxml-->
+<wxs src="./../../../utils/time.wxs" module="tools" />
+<text class="top_txt">温馨提示：</text>
+<text class="top_txt"> 卡劵兑换码为数字码，一经使用当即作废！</text>
+<view class="flex content">
+  <input type="text" class="flex1 flex-ali" bindinput="oninput" placeholder-class="pla" placeholder="请输入兑换码"></input>
+  <button class="theme" bindtap="exchange">兑换</button>
+
+</view>
+
+<view class="list" wx:if="{{carddat!=null}}">
+  <view class="top flex">
+    <view class="left">
+      <text class="prie">{{carddat.token}}</text>
+      <text class="u">U点</text>
+      <text class="recharge txt_center">{{carddat.type==0 ? '赠送券' : '充值券'}}</text>
+
+      <view class="triangle"></view>
+    </view>
+    <view class="right">
+      <text class="title ">{{carddat.type==0 ? '蓝巫师赠送你' : '充值券'}}满{{carddat.fullToken}}U点赠送{{carddat.token}}U点</text>
+      <text class="remark ">{{carddat.desc}}</text>
+    </view>
+
+  </view>
+  <view class="footer flex not">
+    <text class="time flex1">有效期：{{tools.dateFormat(carddat.startTime,'yyyy.MM.dd hh:mm')}}-{{tools.dateFormat(carddat.endTime,'yyyy.MM.dd hh:mm')}}</text>
+    <text class="status" bindtap="useCoupons">立即领取</text>
+    <image src="./../../../assets/static/ic_arrowRight.png" style="width:12rpx;height:21rpx;"></image>
+  </view>
+
+</view>

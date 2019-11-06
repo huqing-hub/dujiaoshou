@@ -1,0 +1,14 @@
+<wxs src="../../utils/time.wxs" module="tools" />
+<view class="whole">
+	<view wx:if="{{isHas}}" class="noData">-暂无数据-</view>
+	<view class="topList" wx:for="{{recordData}}" wx:key="item">
+		<view class="left">
+			<text class="txt1">在线充值</text>
+			<text class="txt2">{{tools.time(item.time)}}</text>
+		</view>
+		<view class="right">
+			<text class="txt1">{{item.token}}U点</text>
+			<text class="txt2">成功</text>
+		</view>	
+	</view>
+</view>

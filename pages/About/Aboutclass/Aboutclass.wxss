@@ -1,0 +1,99 @@
+/* pages/Aboutclass/Aboutclass.wxss */
+
+.tab{font-size:30rpx;font-family:PingFang SC;font-weight:500;color:rgba(166,166,169,1);}
+.tab-nav-item{position: relative;font-size:30rpx;font-weight:bold;font-family:PingFang SC;color:rgba(50,51,68,1);}
+.tab-nav-item.tab-active:before {
+    width: 92%;
+    height: 4rpx;
+    position: absolute;
+    left: 50%;
+    bottom: -26rpx;
+    margin-left: -46%;
+    z-index: 4;
+    background:rgba(50,51,68,1);
+    border-radius:2px;
+}
+.badge:after, .tab-nav-item.tab-active:before, .tab-nav-item:not(:last-child):after, .tab-nav:after {
+    content: '';
+}
+
+.tab-item{position: relative;font-size:30rpx;font-weight:bold;font-family:PingFang SC;color:rgba(50,51,68,1);}
+.tab-item.tab-active:before {
+    width: 25%;
+    height: 4rpx;
+    position: absolute;
+    /* left: 50%; */
+    bottom: -26rpx;
+    /* margin-left: -46%; */
+    z-index: 4;
+    background:rgba(0,74,149,1);
+    border-radius:2px;
+}
+.tab-item:after, .tab-item.tab-active:before{
+    content: '';
+}
+
+.content .top{position: fixed;width: 100%;top: 0rpx;z-index: 999;box-shadow:0px 5px 10px 0px rgba(147,147,147,0.1);}
+.content .bottom{position: relative;width: 100%;top: 372rpx;}
+.content .top,.tab_list,.adds{background:rgba(255,255,255,1);}
+.tab_list{padding: 30rpx 0rpx 27rpx 0rpx;}
+.tab_list .tab{position: relative;}
+
+.adds{padding: 60rpx 30rpx;border-top:rgba(235,235,235,1) solid 1px;}
+.adds>image{margin-right: 24rpx;}
+.adds>view>text:first-child{font-size:28rpx;font-family:PingFang SC;font-weight:500;color:rgba(49,49,52,1);}
+.adds>view>text:last-child{font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);padding-top: 18rpx;}
+
+.time_list>text{font-size:28rpx;font-family:PingFang SC;font-weight:500;color:rgba(103,103,107,1);}
+.time_list>text:last-child{padding-top: 18rpx;}
+.time_list>text.no{color:rgba(180,180,180,1);}
+.time_list>text.this{color:rgba(216,178,123,1);}
+
+.card{padding: 30rpx 20rpx;background:rgba(255,255,255,1);box-shadow:0px 10rpx 30rpx 0px rgba(125,128,169,0.11);border-radius:10rpx;margin: 20rpx 30rpx;}
+.card>image{width:180rpx;height:140rpx;border-radius:10rpx;background-color: rgba(148,151,163,1);margin-right: 30rpx;}
+.card .title{font-size:28rpx;font-family:PingFang SC;font-weight:bold;color:rgba(50,51,68,1);padding-bottom: 20rpx;}
+.card .name{font-size:22rpx;font-family:PingFang SC;font-weight:bold;color:rgba(180,180,180,1);padding-bottom: 32rpx;}
+.card .satuts{font-size:22rpx;font-family:PingFang SC;font-weight:bold;color:rgba(180,180,180,1);}
+.satuts.this{color:rgba(216,178,123,1);}
+.card .pre{width:156rpx;height:56rpx;background:rgba(216,178,123,1);border-radius:10rpx;font-size:24rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);align-self: flex-end;}
+
+
+
+.teacher{padding: 42rpx 30rpx;background-color: #fff;}
+.teacher>image{width:94rpx;height:93rpx;border-radius:50%;margin-right: 24rpx;}
+.teacher .name{font-size:28rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.teacher .type{padding-top: 13rpx;font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);}
+.teacher .price{font-size:22rpx;font-family:PingFang SC;font-weight:500;color:rgba(255,199,192,1);border:2rpx solid rgba(255,199,192,1);border-radius:6rpx;margin-left: 18rpx;padding: 8rpx 13rpx;}
+.button{width:120rpx;height:56rpx;background:rgba(199,201,207,1);border-radius:10rpx;font-size:26rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);}
+.teacher .this{background:rgba(216,178,123,1);}
+
+.pay_content{position: fixed;width: 100%;height: 100%;z-index: 9999;display: flex;justify-content: center;align-items: center;}
+.choose .title{font-size:32rpx;font-weight:bold;color:rgba(49,49,52,1);text-align: center;display: block;}
+.choose{width: 100%;background:rgba(255,255,255,1);border-radius:10rpx;margin: 0rpx 75rpx;padding: 40rpx;}
+.choose .this{border:2rpx solid rgba(15,83,184,1);}
+.cards{background:rgba(255,255,255,1);border:2rpx solid rgba(177,179,188,1);padding: 20rpx;margin-bottom: 20rpx;}
+.cards image{width:26rpx;height:26rpx;}
+.more{background:rgba(0,0,0,1);opacity:0.5;position: fixed;width: 100%;height: 100%;z-index: 9999;}
+.cards_content>text:first-child{font-size:30rpx;
+font-weight:bold;
+color:rgba(15,83,184,1);}
+.cards_content>text:last-child{font-size:22rpx;padding-top: 19rpx;
+font-weight:500;
+color:rgba(15,83,184,1);}
+.cards .hot{padding: 0rpx 15rpx;
+height:40rpx;
+background:rgba(255,163,152,1);
+border-radius:6rpx;font-size:22rpx;
+font-weight:bold;
+color:rgba(255,255,255,1);}
+.choose .use{background:rgba(0,74,149,1);border-radius:10rpx;width:200rpx;height:72rpx;margin: 0rpx auto;font-size:32rpx;font-weight:bold;color:rgba(255,255,255,1);}
+
+.balance{font-size:48rpx;font-weight:bold;color:rgba(49,49,52,1);display: block;padding-bottom: 49rpx;margin-bottom: 49rpx;text-align: center;border-bottom:1px solid rgba(235,235,235,1);padding-top: 63rpx;}
+.onpay{border:2rpx solid rgba(177,179,188,1);}
+.onpay text{color:rgba(177,179,188,1) !important;}
+.onpay .hot{background:rgba(148,151,163,1);color:rgba(255,255,255,1) !important;}
+
+.top-up{height:72rpx;width:200rpx;background:rgba(0,74,149,1);border-radius:10rpx;font-size:32rpx;
+margin: 60rpx auto 0rpx auto;
+font-weight:bold;
+color:rgba(255,255,255,1);}

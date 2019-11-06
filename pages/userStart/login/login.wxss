@@ -1,0 +1,14 @@
+/* pages/login/login.wxss */
+.body{height:100vh;font-size: 50rpx;padding: 30rpx;font-family:PingFang SC;background-color: #fff;}
+button{background:rgba(50,51,68,1);border-radius:10rpx;padding:0rpx 0rpx;}
+.user{text-align: center;margin-top: 100rpx;position: relative;height: 100%;}
+.user .user_head{width:160rpx;height:160rpx;border-radius: 20rpx;box-shadow: 0px 10rpx 30rpx 0px rgba(125,128,169,0.11);overflow: hidden;margin: 0rpx auto; }
+.user .nick-name{padding:20rpx 0;}
+.user button{padding: 6rpx 0rpx;width:100%;margin: 30rpx auto;color:rgba(255,255,255,1);}
+
+.login_name{font-size:32rpx;font-weight:bold;padding-top: 40rpx;color:rgba(49,49,52,1);display: block;}
+.login_sintxt{color:rgba(148,151,163,1);padding-top: 59rpx;font-size: 30rpx;display: block;}
+.login_oth{font-size:28rpx;font-weight:bold;color:rgba(50,51,68,1);display: inline-block;margin: 0rpx auto;}
+.Tips_content{position: absolute;bottom: 168rpx;}
+.Tips_content text:first-child{font-weight:bold;color:rgba(148,151,163,1);font-size: 26rpx;display: block;padding-bottom: 30rpx;}
+.Tips_content text:last-child{color:rgba(148,151,163,1);font-size: 24rpx;padding-right: 60rpx;display: inline-block;}

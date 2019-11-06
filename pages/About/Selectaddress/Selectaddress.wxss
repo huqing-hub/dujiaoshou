@@ -1,0 +1,31 @@
+/* pages/About/Selectaddress/Selectaddress.wxss */
+page {
+  height: 100%;
+}
+ 
+.view {
+  width: 100%;
+  height: 100%;
+}
+ 
+map {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(199,201,207,1);
+}
+
+.top{background:rgba(255,255,255,1);box-shadow:0px 5rpx 10rpx 0px rgba(147,147,147,0.1);position: fixed;width: 100%;z-index: 999;}
+.top>view{padding: 24rpx;}
+.top .city{font-size:30rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.top .line{width:2rpx;height:40rpx;background:rgba(199,201,207,1);margin:  0rpx 40rpx 0rpx 30rpx;}
+.top input {font-size:30rpx;font-family:PingFang SC;font-weight:500;color:rgba(49,49,52,1);margin-right:20rpx; }
+.top .pla{color:rgba(199,201,207,1);}
+.top .sos{font-size:30rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+
+.bottom{width: 100%;position: fixed;bottom: 50rpx;z-index: 999;}
+.bottom .bg{background-color: #fff;height: 100%;margin: 30rpx;box-shadow:0px 10px 18px 0px rgba(147,147,147,0.3);border-radius:10rpx;overflow: hidden;}
+.bottom .footer{height:110rpx;width:100%;background:rgba(50,51,68,1);font-size:32rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);}
+.footer_txt text:first-child{font-size:30rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.footer_txt text:last-child{font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);padding-top: 19rpx;}
+.footer_txt{padding: 30rpx 20rpx;}
+.round{width:20rpx;height:20rpx;background:rgba(50,51,68,1);border-radius:50%;margin-right: 30rpx;}

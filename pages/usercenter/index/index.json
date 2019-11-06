@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "myheader": "/components/myheader/myheader",
+    "Tabbar": "/components/Tabbar/cmp"
+  },
+  "navigationStyle": "custom"
+}

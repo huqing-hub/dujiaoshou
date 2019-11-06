@@ -1,0 +1,81 @@
+/* pages/classEnd/classEnd.wxss */
+.hander{
+	width: 100vw;
+	height:388rpx;
+	background:rgba(50,51,68,1);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.iconImg{
+	width: 93rpx;
+	height: auto;
+	margin-top: 27rpx;
+}
+.txt1{
+	font-size:50rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	margin-top: 70rpx;
+}
+.txt2{
+	font-size:30rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	margin-top: 39rpx;
+}
+.txt3{
+	text-align: center;
+	margin-top: 60rpx;
+	font-size:34rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(148,151,163,1);
+}
+.classList{
+	width:690rpx;
+	margin: 0 auto;
+	margin-top: 49rpx; 
+}
+.classList>.classItem:not(:first-child){
+	margin-top: 20rpx;
+}
+.classItem{
+	width: 100%;
+	display: flex;
+	border:2rpx solid rgba(208,208,208,1);
+	height: 140rpx;
+	padding: 0 40rpx;
+	box-sizing: border-box;
+}
+.leftInfo{
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.rightInfo{
+	flex: 1;
+	font-size:36rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(49,49,52,1);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.txt4{
+	font-size:32rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(49,49,52,1);
+}
+.txt5{
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(148,151,163,1);
+	margin-top: 22rpx;
+}

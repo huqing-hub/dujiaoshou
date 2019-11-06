@@ -1,0 +1,20 @@
+/* pages/course/schedule/schedule.wxss */
+.content{margin: 0rpx 24rpx 0rpx 31rpx;}
+.b_left{width:4rpx;background:rgba(242,242,242,1);position: absolute;height: 100%;}
+.c_right{margin-left: 23rpx;padding-top: 55rpx;}
+.m-top{padding-top: 44rpx;position: relative;}
+.score_c{background:rgba(255,255,255,1);box-shadow:0px 10rpx 30rpx 0px rgba(125,128,169,0.11);border-radius:10rpx;padding: 30rpx 40rpx;}
+.score_c .title{font-size:28rpx;font-weight:bold;color:rgba(49,49,52,1);}
+.score_img{margin-right: 30rpx;height:140rpx;width:180rpx;background:linear-gradient(0deg,rgba(0,0,0,1) 0%,rgba(255,255,255,1) 100%);border-radius:10rpx;background-size: 100% 100%;}
+.score_c .name{font-size:22rpx;font-weight:bold;color:rgba(180,180,180,1);}
+.score_c text{display: block;padding-bottom: 20rpx;}
+.score_m{font-size:24rpx;font-weight:500;color:rgba(148, 151, 163, 1);padding-bottom: 29rpx;}
+
+.score_d{font-size:32rpx;font-weight:bold;color:rgba(49,49,52,1);position: absolute;}
+.score_d>text{padding-left: 23rpx;font-size:32rpx;font-family:PingFang SC;font-weight:bold;color:rgba(148,151,163,1);}
+.score_d>text.this{padding-left: 17rpx;}
+.c_right{margin-left: 43rpx;}
+.this>.score_m,.this{color: rgba(49,49,52,1) !important;}
+
+.ts{color: #888888;font-size: 28rpx;}
+.cflex{height: 100%;position: fixed;width: 100%;}

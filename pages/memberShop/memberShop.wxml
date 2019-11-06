@@ -1,0 +1,15 @@
+<view class="whole">
+	<view class="shoplist" wx:for="{{5}}">
+		<view class="shopimg" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+		<view class="shopName">
+			蚂蚁潮流短袖蚂蚁潮流短袖蚂蚁潮流短袖蚂蚁潮流短袖蚂蚁潮流短袖
+        </view>
+		<view class="shopPro">
+			商品简介商品简介商品简介商品简介商品简介商品简介
+		</view>
+		<view class="shopFoot">
+			<text class="txt1">291人购买</text>
+			<text class="txt2">￥299U点</text>
+		</view>
+	</view>
+</view>

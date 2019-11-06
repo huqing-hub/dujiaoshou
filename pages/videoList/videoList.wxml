@@ -1,0 +1,19 @@
+<view class="whole">
+	<view class="videolist" wx:for="{{5}}">
+		<view class="tips">2019年09月23日  官方上传</view>
+		<view class="videoItem" style="background-image:url({{STATICIMG}}/test.jpg)">
+			<image mode="widthFix" class="playBtn" src="{{STATICIMG}}/ic_play_classVideo.png"></image>
+			<view class="logs">NEW</view>
+		</view>
+		<view class="videoFoot">
+			<view class="leftinfo">
+				<text class="txt1">韩国舞蹈 Boyfriend </text>
+				<text class="txt2">教师：陈朕</text>
+			</view>
+			<view class="rightinfo">
+				<view class="downimg" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+				<text class="txt3">下载到本地</text>	
+			</view>
+		</view>
+	</view>
+</view>

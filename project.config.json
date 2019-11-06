@@ -1,0 +1,754 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": false,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": false,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wxd6d68a56a4d02fd2",
+	"projectname": "Ant",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 84,
+			"list": [
+				{
+					"id": 0,
+					"name": "定位",
+					"pathName": "pages/pages-list/location/location",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "pages/pages-list/poster/poster",
+					"pathName": "pages/pages-list/poster/poster",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "条形码二维码",
+					"pathName": "pages/pages-list/codes/codes",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "海报",
+					"pathName": "pages/pages-list/poster/poster",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "日历",
+					"pathName": "pages/pages-list/calendar/calendar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "html解析",
+					"pathName": "pages/pages-list/html/html",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pages-list/map/qqmap/qqmap",
+					"pathName": "pages/pages-list/map/qqmap/qqmap",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "components/gesture/gesture",
+					"pathName": "components/gesture/gesture",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "websocket",
+					"pathName": "pages/pages-list/websocket/websocket",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "AR",
+					"pathName": "pages/pages-list/ar/ar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图片验证码",
+					"pathName": "pages/pages-list/img-code/img-code",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 11,
+					"name": "pages/pages-list/computed-watch/computed-watch",
+					"pathName": "pages/pages-list/computed-watch/computed-watch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地图",
+					"pathName": "pages/pages-list/map/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "登录",
+					"pathName": "pages/pages-list/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "中英文",
+					"pathName": "pages/pages-list/ch-en/ch-en",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "dujiaoxi",
+					"pathName": "pages/dujiaoxi/dujiaoxi",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "videoDel",
+					"pathName": "pages/videoDel/videoDel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/bindingPhone/bindingPhone",
+					"pathName": "pages/userStart/bindingPhone/bindingPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/Aboutclass/Aboutclass",
+					"pathName": "pages/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Selectaddress/Selectaddress",
+					"pathName": "pages/About/Selectaddress/Selectaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Chooseteacher/Chooseteacher",
+					"pathName": "pages/About/Chooseteacher/Chooseteacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutsuccess/Aboutsuccess",
+					"pathName": "pages/About/Aboutsuccess/Aboutsuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/bindingPhone/bindingPhone",
+					"pathName": "pages/userStart/bindingPhone/bindingPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "fill_info",
+					"pathName": "pages/fill_info/fill_info",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/login/login",
+					"pathName": "pages/usercenter/myintegral/myintegral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "cardDel",
+					"pathName": "pages/cardDel/cardDel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "top-up",
+					"pathName": "pages/top-up/top-up",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/myintegral/myintegral",
+					"pathName": "pages/usercenter/myintegral/myintegral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Selectaddress/Selectaddress",
+					"pathName": "pages/About/Selectaddress/Selectaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Chooseteacher/Chooseteacher",
+					"pathName": "pages/About/Chooseteacher/Chooseteacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutsuccess/Aboutsuccess",
+					"pathName": "pages/About/Aboutsuccess/Aboutsuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/Coursedetails/Coursedetails",
+					"pathName": "pages/course/Coursedetails/Coursedetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "attendClass",
+					"pathName": "pages/attendClass/attendClass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "classEnd",
+					"pathName": "pages/classEnd/classEnd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "usePage",
+					"pathName": "pages/usePage/usePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "releaseWork",
+					"pathName": "pages/releaseWork/releaseWork",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "techPage",
+					"pathName": "pages/techPage/techPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "videoList",
+					"pathName": "pages/videoList/videoList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "homePage",
+					"pathName": "pages/homePage/homePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "memberShop",
+					"pathName": "pages/memberShop/memberShop",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shopDel",
+					"pathName": "pages/shopDel/shopDel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/techPage/techPage",
+					"pathName": "pages/usercenter/Paymentverification/Paymentverification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/Setup/Setup",
+					"pathName": "pages/usercenter/Setup/Setup",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/login/login",
+					"pathName": "pages/userStart/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/login/login",
+					"pathName": "pages/userStart/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/bindingPhone/bindingPhone",
+					"pathName": "pages/userStart/bindingPhone/bindingPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/myintegral/myintegral",
+					"pathName": "pages/usercenter/myintegral/myintegral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/bindingPhone/bindingPhone",
+					"pathName": "pages/userStart/bindingPhone/bindingPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/myintegral/myintegral",
+					"pathName": "pages/usercenter/myintegral/myintegral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/Usingrecord/Usingrecord",
+					"pathName": "pages/usercenter/Usingrecord/Usingrecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/schedule/schedule",
+					"pathName": "pages/course/schedule/schedule",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/score/score",
+					"pathName": "pages/course/score/score",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Chooseteacher/Chooseteacher",
+					"pathName": "pages/About/Chooseteacher/Chooseteacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/Coursedetails/Coursedetails",
+					"pathName": "pages/course/Coursedetails/Coursedetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/Somecode/Somecode",
+					"pathName": "pages/course/Somecode/Somecode",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/myintegral/myintegral",
+					"pathName": "pages/usercenter/myintegral/myintegral",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/Cardexchange/Cardexchange",
+					"pathName": "pages/usercenter/Cardexchange/Cardexchange",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Selectaddress/Selectaddress",
+					"pathName": "pages/About/Selectaddress/Selectaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/usercenter/invitation/invitation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Selectaddress/Selectaddress",
+					"pathName": "pages/About/Selectaddress/Selectaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/course/schedule/schedule",
+					"pathName": "pages/course/schedule/schedule",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Paysuccess",
+					"pathName": "pages/usercenter/Paysuccess/Paysuccess",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/couponlist/couponlist",
+					"pathName": "pages/usercenter/couponlist/couponlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/invitation/invitation",
+					"pathName": "pages/usercenter/invitation/invitation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Chooseteacher/Chooseteacher",
+					"pathName": "pages/About/Chooseteacher/Chooseteacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Chooseteacher/Chooseteacher",
+					"pathName": "pages/About/Chooseteacher/Chooseteacher",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/index/index",
+					"pathName": "pages/usercenter/logistics/logistics",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/couponlist/couponlist",
+					"pathName": "pages/usercenter/couponlist/couponlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/Cardexchange/Cardexchange",
+					"pathName": "pages/usercenter/Cardexchange/Cardexchange",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/userStart/bindingPhone/bindingPhone",
+					"pathName": "pages/userStart/bindingPhone/bindingPhone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/usercenter/couponlist/couponlist",
+					"pathName": "pages/usercenter/couponlist/couponlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Selectaddress/Selectaddress",
+					"pathName": "pages/About/Selectaddress/Selectaddress",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/About/Aboutclass/Aboutclass",
+					"pathName": "pages/About/Aboutclass/Aboutclass",
+					"scene": null
+				}
+			]
+		}
+	}
+}

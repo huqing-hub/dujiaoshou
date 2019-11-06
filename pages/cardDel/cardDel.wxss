@@ -1,0 +1,170 @@
+/* pages/cardDel/cardDel.wxss */
+page{
+	background-color: white;
+}
+.whole{
+	padding-bottom: 100rpx;
+}
+.handBox{
+	width: 100vw;
+	height: 537rpx;
+	background-color: #323344;
+	padding: 14rpx 30rpx;
+	box-sizing: border-box;
+}
+.handimg{
+	width: 100%;
+	height: 338rpx;
+	background: center no-repeat;
+	background-size: cover;
+	display: flex;
+	padding: 38rpx;
+	box-sizing: border-box;
+}
+.leftBox{
+	width: 65%;
+}
+.txt1{
+	font-size:52rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+ 	letter-spacing: 2rpx;
+	display: block;
+	width: 100%;
+}
+.txt2{
+	display: block;
+	width: 100%;
+	font-size:30rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	margin-top: 33rpx;
+}
+.txt3{
+	display: block;
+	width: 100%;
+	font-size:24rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(255,255,255,1);
+	margin-top: 17rpx;
+}
+.txt4{
+	margin-top: 53rpx;
+}
+.txt5{
+	font-size:58rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(135,98,48,1);
+}
+.txt6{
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(135,98,48,1);
+	margin-left: 21rpx;
+}
+.rightBox{
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.useImg{
+	width:120rpx;
+	height: 120rpx;
+	border-radius: 50%;
+	background: center no-repeat;
+	background-size: cover; 
+}
+.txt7{
+	margin-top: 110rpx;
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(135,98,48,1);
+	display: flex;
+}
+.righticon{
+	width: 18rpx;
+	height: auto;
+}
+.usepro{
+	margin-top: 42rpx;
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(148,151,163,1);
+	line-height:36rpx;
+}
+.centerBox{
+	width: 100%;
+	padding: 0 30rpx;
+	padding-top: 41rpx;	
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	border-bottom: 20rpx solid rgba(249,251,252,1);
+	padding-bottom: 42rpx;
+}
+.tips{
+	font-size:32rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(49,49,52,1);
+	margin-bottom: 10rpx;
+}
+.infoList{
+	font-size:26rpx;
+	font-family:PingFang SC;
+	font-weight:500;
+	color:rgba(148,151,163,1);
+	line-height:36rpx;
+	margin-top: 32rpx;
+	display: flex;
+	/* position: relative; */
+}
+.setmar{
+	margin-left: 20rpx;
+}
+.num{
+	width: 38rpx;
+	height: 38rpx;
+	border:1px solid rgba(207,207,207,1);
+	border-radius: 50%;
+	line-height: 38rpx;
+	text-align: center;
+	position: relative;
+}
+.num:after{
+	content: "";
+	width:2rpx;
+	height: 32rpx;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: rgba(235,235,235,1);
+	top: 38rpx;
+}
+.centerBox>.infoList:last-child>.num:after{
+	content: "";
+	width: 0;
+	height: 0;
+}
+.footBox{
+	width: 100vw;
+	height:100rpx;
+	background-color:rgba(50,51,68,1);
+	text-align: center;
+	line-height: 100rpx;
+	font-size:34rpx;
+	font-family:PingFang SC;
+	font-weight:bold;
+	color:rgba(255,255,255,1);  
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}

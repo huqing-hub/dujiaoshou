@@ -1,0 +1,83 @@
+<!--pages/usercenter/logistics/logistics.wxml-->
+<view class="state">
+  <text class="state_title">订单已发货</text>
+  <text class="state_sig">预计2019年11月23日到达您手中</text>
+</view>
+<view class="Courier flex-ali">
+  <image src=""></image>
+  <view class="flex-col">
+    <text class="name">由 顺丰快递 承运</text>
+    <text class="contact">官方电话 95888</text>
+  </view>
+</view>
+<view class="Orderno flex-ali">
+  <text class="title flex1">快递单号：8792387289792</text>
+  <button class="flex-cen">复制单号</button>
+</view>
+<view class="logistics">
+  <view class="list flex-ali">
+    <view class="flex-col time">
+      <text class="">10-29</text>
+      <text class="">22:00</text>
+    </view>
+    <view class="progress progress-height">
+      <text class="flex-cen" style="top: 0%;">收</text>
+    </view>
+    <view class="right flex1">
+      <text class="txt">运输中</text>
+      <text class="add">[收货地址]湖南省长沙市岳麓区潇湘中路万科金域缇香小区5冻1304</text>
+    </view>
+  </view>
+  <view class="list flex-ali">
+    <view class="flex-col time">
+      <text class="">10-29</text>
+      <text class="">22:00</text>
+    </view>
+    <view class="progress">
+      <text class="flex-cen theme">运</text>
+    </view>
+    <view class="right flex1">
+      <text class="txt">运输中</text>
+      <text class="add">[长沙市]快件已经在长沙转运中心扫描装车 下一站武汉转运中心</text>
+    </view>
+  </view>
+  <view class="list flex-ali">
+    <view class="flex-col time">
+      <text class="">10-29</text>
+      <text class="">22:00</text>
+    </view>
+    <view class="progress">
+      <text class="flex-cen">揽</text>
+    </view>
+    <view class="right flex1">
+      <text class="txt">已揽件</text>
+      <text class="add">[长沙市]岳麓区八部快递员王伟（18788765436）已揽件</text>
+    </view>
+  </view>
+  <view class="list flex-ali">
+    <view class="flex-col time">
+      <text class="">10-29</text>
+      <text class="">22:00</text>
+    </view>
+    <view class="progress">
+      <text class="flex-cen">下</text>
+    </view>
+    <view class="right flex1">
+      <text class="txt">已出库 </text>
+      <text class="add">[长沙市]岳麓区八部快递员王伟（18788765436）已揽件</text>
+    </view>
+  </view>
+  <view class="list flex-ali">
+    <view class="flex-col time">
+      <text class="">10-29</text>
+      <text class="">22:00</text>
+    </view>
+    <view class="progress progress-height">
+      <text class="flex-cen">下</text>
+    </view>
+    <view class="right flex1">
+      <text class="txt">已下单 </text>
+      <text class="add">您的订单已经开始处理</text>
+    </view>
+  </view>
+</view>

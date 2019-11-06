@@ -1,0 +1,16 @@
+<!--pages/usercenter/Usingrecord/Usingrecord.wxml-->
+<scroll-view scroll-y="true" bindscrolltolower="more()">
+  <view class="teacher flex-ali" wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="item" >
+    <image class="" src="{{item.image}}"></image>
+    <view class="flex-col flex1">
+      <text class="name">{{item.title}}{{item.type==1 ? '课程' : '商品'}}</text>
+      <text class="type">{{item.time}}</text>
+      <view class="flex-ali" style="padding-top:32rpx;">
+        <text class="type flex1" style="padding-top:0rpx;">已完成</text>
+        <text class="price theme_txt">消耗{{item.token}}U点</text>
+      </view>
+    </view>
+  </view>
+  
+  <text class="pub_prompt">暂无更多</text>
+</scroll-view>

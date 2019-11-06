@@ -1,0 +1,47 @@
+<!--pages/course/score/score.wxml-->
+<scroll-view class="">
+  <view style="background-color: #fff;">
+    <view class="title_content flex-cen">
+      <view class="">
+        <view class="title flex-cen-col">
+          <text>陈朕老师 10月20日 20:00</text>
+          <text>【Breaking初级课程】</text>
+        </view>
+      </view>
+    </view>
+    <text class="prompt_txt">为了更好的提升我们的课程和服务质量，UNICORN邀请您对课程进行匿名评分，评分成功可获得10积分！</text>
+  </view>
+  <view class="Gradingtype">
+    <text class="type_txt">请对陈朕老师的教学评分</text>
+    <text class="describe_txt">教师授课态度、服务意识、专业技能是否满意？</text>
+    <star starOption="{{starOption}}" data-type="teacherScore" bindcurStar="curStar" style="display: block;text-align: center;margin-top:39rpx;" ></star>
+    <view class="flex">
+      <textarea class="flex1" bindinput="oninput" data-index="teacherContent" placeholder="可以在这里简单表达您的评价与建议（50字）"  maxlength="50" placeholder-class="textarea">
+        
+      </textarea>
+    </view>
+  </view>
+  <view class="Gradingtype">
+    <text class="type_txt">请对【Breaking初级课程】内容设置评分</text>
+    <text class="describe_txt">课程的内容编排是否合理？</text>
+    <star starOption="{{starOption}}" data-type="courseScore" bindcurStar="curStar" style="display: block;text-align: center;margin-top:39rpx;" ></star>
+    <view class="flex">
+      <textarea class="flex1" bindinput="oninput" data-index="courseContent" placeholder="可以在这里简单表达您的评价与建议（50字）"  maxlength="50" placeholder-class="textarea">
+        
+      </textarea>
+    </view>
+  </view>
+  <view class="Gradingtype">
+    <text class="type_txt">请对现场工作人员今天的服务进行评分</text>
+    <text class="describe_txt">现场工作人员是否微笑服务、耐心讲解、热情给予帮助？</text>
+    <star starOption="{{starOption}}" data-type="serviceScore" bindcurStar="curStar" style="display: block;text-align: center;margin-top:39rpx;" ></star>
+    <view class="flex">
+      <textarea class="flex1"  bindinput="oninput" data-index="serviceContent" placeholder="可以在这里简单表达您的评价与建议（50字）" maxlength="50" placeholder-class="textarea">
+        
+      </textarea>
+    </view>
+    <!-- <navigator url="/pages/course/scoresuccess/scoresuccess" hover-class="navigator-hover"> -->
+      <button class="submit theme" bindtap="submit">提交评价</button>
+    <!-- </navigator> -->
+  </view>
+</scroll-view>

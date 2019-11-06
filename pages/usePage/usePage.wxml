@@ -1,0 +1,38 @@
+<!--pages/usePage/usePage.wxml-->
+<view class="whole">
+    <view class="autherBox">
+		<view class="leftImg" style="background-image:url({{STATICIMG}}/test.jpg)" bindtap="homePage"></view>
+		<view class="rightInfo">
+			<view class="leftTxt">
+				<text class="auName nowrap">韩国舞蹈 Boyfriend </text>
+				<text class="auname2 nowrap">673粉丝  |  2343支持</text>
+			</view>
+			<view>
+				<view class="focus theme">关注</view>
+			</view>			
+		</view>
+	</view>
+	<view class="tabs">
+		<view class="{{currtab==1?'active':''}}" data-tab="1" bindtap="changeTab">作品</view>
+		<view class="{{currtab==2?'active':''}}" data-tab="2" bindtap="changeTab">关注</view>
+		<view class="{{currtab==3?'active':''}}" data-tab="3" bindtap="changeTab">粉丝</view>
+	</view>
+	<!-- 作品 -->
+	<view class="videolist" wx:if="{{currtab==1}}">
+		<view class="videos" wx:for="{{13}}">
+			<view class="topImg" style="background-image:url({{STATICIMG}}/test.jpg)">
+				<image mode="widthFix" src="{{STATICIMG}}/ic_play.png" class="playbtn"></image>
+			</view>
+			<text class="v_name nowrap">舞蹈 战</text>
+			<text class="f_num nowrap">支持：5000</text>
+		</view>
+	</view>
+	<!-- 关注 -->
+	<view class="conlist" wx:if="{{currtab==2||currtab==3}}">
+		<view class="leftbox" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+		<view class="rightbox">
+			<text>张三三</text>
+			<text>支持：5000</text>
+		</view>
+	</view>
+</view>

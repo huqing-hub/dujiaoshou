@@ -1,0 +1,23 @@
+
+function formatTime(date, types, index) {
+  if (types === 's') {
+    date = getDate(date * 1000);
+  } else if (types === 'ms') {
+    date = getDate(date);
+  }
+  console.log(date)
+  if (index == 0) {
+    return "今天";
+  } else if (index == 1) {
+    return "明天";
+  } else {
+    return (date.getMonth() + 1) + '月' + date.getDate() + '日';
+  }
+}
+function newdate(date) {
+  return getDate(date).getHours() + ':' + getDate(date).getMinutes();
+}
+module.exports = {
+  time: newdate,
+  formatTime: formatTime
+}

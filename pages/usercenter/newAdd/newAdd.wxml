@@ -1,0 +1,26 @@
+<!--pages/usercenter/newAdd/newAdd.wxml-->
+<!--pages/usercenter/editorAdd/editorAdd.wxml-->
+<view class="list flex-ali">
+  <text class="title" space="nbsp">姓       名</text>
+  <input type="text"></input>
+</view>
+<view class="list flex-ali">
+  <text class="title" space="nbsp">电       话</text>
+  <input type="text"></input>
+</view>
+<view class="list flex-ali">
+  <text class="title" space="nbsp">地       址</text>
+  <input type="text"></input>
+</view>
+<view class="list flex-ali">
+  <text class="title" space="nbsp">详细地址</text>
+  <input type="text"></input>
+</view>
+<view class="defaultnote flex-ali">
+  <image src="./../../../assets/static/{{ selected ? 'ic_choose.png' : 'ic_nochoose.png'}}" bindtap="select"></image>
+  <text>设为默认地址</text>
+</view>
+<navigator open-type="navigateBack" hover-class="navigator-hover">
+  <button class="theme save">保存</button>
+</navigator>
+<!-- <button class="delete">删除</button> -->

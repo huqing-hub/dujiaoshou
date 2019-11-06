@@ -1,0 +1,13 @@
+/* pages/Setup/Setup.wxss */
+page{background-color: #fff;}
+.list{height: 108rpx;margin: 0rpx 30rpx;border-bottom:rgba(235,235,235,1) solid 1px;}
+.title{font-size:30rpx;font-weight:500;color:rgba(49,49,52,1);}
+.user_img{width:70rpx;height:70rpx;border-radius:50%;}
+.username{font-size:30rpx;font-weight:500;color:rgba(49,49,52,1);}
+.list>image:last-child{margin-left: 18rpx;width:15rpx;height:24rpx;}
+.updata{height:90rpx;
+background:rgba(0,74,149,1);
+border-radius:10rpx;margin: 90rpx 30rpx;font-size:32rpx;
+font-family:PingFang SC;
+font-weight:bold;
+color:rgba(255,255,255,1);}

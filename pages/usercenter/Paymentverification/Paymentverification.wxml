@@ -1,0 +1,12 @@
+<!--pages/usercenter/Paymentverification/Paymentverification.wxml-->
+<text class="title">为了确认您的财产安全，需要验证手机号</text>
+<text class="txt">验证码已发送至您的手机  182******6587</text>
+<view class="flex-cen">
+  <input class="{{indexnum==items ? 'this' : ''}}" wx:for="{{5}}" wx:for-item="items" type="number" focus="{{indexnum==items}}" maxlength="1" data-index="{{items}}" bindinput="inputon" value="" disabled="{{!(indexnum==items)}}"></input>
+</view>
+<text class="prompt">{{second}}s后重新发送</text>
+
+
+<navigator url="/pages/usercenter/Paysuccess/Paysuccess" hover-class="navigator-hover">
+  <button class="theme">确定</button>
+</navigator>

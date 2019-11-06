@@ -1,0 +1,29 @@
+<!--pages/usercenter/myintegral/myintegral.wxml-->
+<wxs src="./../../../utils/time.wxs" module="tools" />
+<scroll-view  scroll-y="true" bindscrolltolower="more()">
+  <view class="top_padding flex-cen-col">
+    <text class="num theme_txt">100</text>
+    <text class="txt">剩余积分（分）</text>
+  </view>
+  <view class="flex-ali tab_list course">
+    <view class="flex1 flex-cen course" data-type="0" bindtap="tabchoose">
+      <text class="tab {{ tabtype==0 ? 'tab-nav-item tab-active theme_txt' : ''}}">课程约课</text>
+    </view>
+    <view class="flex1 flex-cen course" data-type="1" bindtap="tabchoose">
+      <text class="tab {{ tabtype==1 ? 'tab-nav-item tab-active theme_txt' : ''}}">教师约课</text>
+    </view>
+  </view>
+  <view class="list flex-ali tab-nav-item tabbt" wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class="flex-col flex1">
+      <text class="name">{{itemName.title}}</text>
+      <text class="time">{{tools.time(itemName.time)}}</text>
+    </view>
+    <text class="num">+{{itemName.integra}}</text>
+  </view>
+  <text class="pub_prompt">暂无更多</text>
+  <view class="list flex-ali " style="height: 50rpx;" wx:if="{{listdata.length>4}}">
+  </view>
+  <navigator url="/pages/usercenter/Cardexchange/Cardexchange" hover-class="navigator-hover">
+    <button class="footer theme" wx:if="{{tabtype==1}}">兑换U点</button>
+  </navigator>
+</scroll-view>

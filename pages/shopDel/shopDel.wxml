@@ -1,0 +1,69 @@
+<view class="whole">
+	<view class="hander">
+		<image mode="widthFix" src="{{STATICIMG}}/test.jpg" class="shopimg"></image>
+		<view class="shopinfo">
+			<text class="txt1">￥299U点</text>
+			<text class="txt2">291人购买</text>
+		</view>
+		<view class="shopName">蚂蚁潮流短袖</view>
+	</view>
+	<view class="setbor">
+		<view class="rowBox">
+			<text class="txt3">发货地</text>
+			<text class="txt4">湖南长沙</text>
+		</view>
+		<view class="rowBox">
+			<text class="txt3">保障</text>
+			<text class="txt4">官方保证正品</text>
+		</view>
+		<view class="rowBox" bindtap="openPop">
+			<text class="txt3">参数</text>
+			<text class="txt4 setmar">品牌,试用年龄,面料,风格...</text>
+			<image mode="widthFix" src="{{STATICIMG}}/ic_arrowRight.png" class="rightIcon"></image>
+		</view>
+		<view class="rowBox"  bindtap="openPop">
+			<text class="txt3">规格</text>
+			<text class="txt4 setmar">选择尺码,颜色</text>
+			<image mode="widthFix" src="{{STATICIMG}}/ic_arrowRight.png" class="rightIcon"></image>
+		</view>
+	</view>
+	<view class="shopDel">商品图片详情</view>
+	<image mode="widthFix" src="{{STATICIMG}}/test.jpg" class="proImg" wx:for="{{5}}"></image>
+	<view class="footBox">
+		<view class="leftBtn">
+			<text class="txt5">￥299U点</text>
+			<text class="txt6">当前可用U点：5600</text>
+		</view>
+		<view class="rightBtn theme" bindtap="openPop">立即购买</view>
+	</view>
+	<!-- 选择规格弹窗 -->
+	<view class="checkPop" bindtap="closePop" wx:if="{{popShow}}">
+		<view class="ruleBox" catchtap="#">
+			<view class="shopBox">
+				<view class="leftimg" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+				<view class="rightinfo">
+					<text class="txt7">￥299U点</text>
+					<text class="txt8">蚂蚁潮流短袖</text>
+					<text class="txt9">请选择尺码</text>
+				</view>
+			</view>
+			<view class="shopRule">
+				<view class="leftpro">购买数量</view>
+				<view class="rightcheck">
+					<view class="runNum" bindtap="runNnm" data-type="reduce">-</view>
+					<view class="shopNum">{{buyNum}}</view>
+					<view class="runNum" bindtap="runNnm" data-type="add">+</view>
+				</view>
+			</view>
+			<view class="shopRule shopRule2">
+				<view class="leftpro">尺码</view>
+				<view class="rightcheck setmar2">
+					<view class="rule1 {{currSize=='S'?'theme':''}}" data-size="S" bindtap="checkSize">S</view>
+					<view class="rule2 {{currSize=='M'?'theme':''}}" data-size="M" bindtap="checkSize">M</view>
+					<view class="rule3 {{currSize=='L'?'theme':''}}" data-size="L" bindtap="checkSize">L</view>
+				</view>
+			</view>
+			<view class="next {{currSize?'theme':''}}" bindtap="nextStep">下一步</view>
+		</view>
+	</view>
+</view>

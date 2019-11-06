@@ -1,0 +1,12 @@
+/* pages/usercenter/newAdd/newAdd.wxss */
+/* pages/usercenter/editorAdd/editorAdd.wxss */
+.list{background-color: #fff;padding: 36rpx 30rpx;border-bottom:rgba(235,235,235,1) solid 1px;
+}
+page{background-color: #fff;}
+.list .title{padding-right: 32rpx;border-right: solid 1px rgba(235,235,235,1);}
+input{padding-left: 29rpx;}
+.defaultnote{padding: 40rpx 31rpx 100rpx 31rpx;font-size:28rpx;font-weight:500;color:rgba(148,151,163,1);}
+.defaultnote>image{width:28rpx;height:28rpx;margin-right: 15rpx;}
+
+.save{margin: 0rpx 30rpx;font-size:32rpx;font-weight:bold;color:rgba(255,255,255,1);}
+.delete{margin: 30rpx;font-size:32rpx;font-weight:bold;color:rgba(255,163,152,1);border:1px solid rgba(255,163,152,1);}

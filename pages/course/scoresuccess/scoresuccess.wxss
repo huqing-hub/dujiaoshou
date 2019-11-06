@@ -1,0 +1,6 @@
+/* pages/course/scoresuccess/scoresuccess.wxss */
+page{background-color: #fff;}
+.success_TOP{margin: 170rpx 111rpx;}
+.success_TOP>text{padding-left: 31rpx;font-size:46rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.success_prompt{font-size:32rpx;font-weight:500;color:rgba(49,49,52,1);width: 66%;margin: 0rpx auto;display: block;padding-bottom: 143rpx;}
+button{background:rgba(50,51,68,1);border-radius:10rpx;margin: 0rpx 30rpx;font-weight:bold;color:rgba(255,255,255,1);font-size:32rpx;}

@@ -1,0 +1,8 @@
+<!--pages/usercenter/Getsuccess/Getsuccess.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>领取成功</text>
+</view>
+
+<text class="success_prompt">领取的卡券已放入您的卡券列表</text>
+<button class="theme">好的，我知道了</button>

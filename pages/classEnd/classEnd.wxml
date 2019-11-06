@@ -1,0 +1,18 @@
+<view class="whole">
+	<view class="hander">
+		<image mode="widthFix" src="{{STATICIMG}}/pic_good.png" class="iconImg"></image>
+		<text class="txt1">今日课毕</text>
+		<text class="txt2">今日总课程时长：05:12:54</text>
+	</view>
+	<view class="txt3">明日共有2节课程，请继续加油</view>
+	<view class="classList">
+		<view class="classItem" wx:for="{{10}}">
+			<view class="leftInfo">
+				<text class="txt4">2019-11-23 20:00</text>
+				<text class="txt5">爵士舞基础课程</text>
+			</view>
+			<view class="rightInfo nowrap">12人预约</view>
+		</view>
+	</view>
+	<qc-Tabbar usertype="{{useris}}" oData="{{[]}}" ></qc-Tabbar>
+</view>

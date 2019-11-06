@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Tabbar": "/components/Tabbar/cmp",
+    "showModal": "/components/showModal/showModal"
+  },
+  "navigationBarTitleText": "约课"
+}

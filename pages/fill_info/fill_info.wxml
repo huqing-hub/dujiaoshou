@@ -1,0 +1,104 @@
+<!--pages/fill_info/fill_info.wxml-->
+<form bindsubmit="submitForm">
+  <view class="whole">
+    <view class="rowBox">
+      <text class="txt1">温馨提示：</text>
+      <text class="txt2">您填写的所有资料将只作为办理会员用途，我们将对您的信息进行严格保密，请放心填写</text>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">手机号码</view>
+      <view class="ipts">
+        <input type="number" class="_txt1" name="tel" bindinput="getValue" value="{{ form.tel }}" placeholder="请输入手机号码" placeholder-class="setfont"></input>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">验证码</view>
+      <view class="ipts">
+        <input type="number" name="code" placeholder="请输入验证码" placeholder-class="setfont" class="codeIpt _txt1"></input>
+        <view class="getcode {{iscode ? 'code' : 'button'}}" bindtap="opencode">{{ second==60 ? '获取验证码' : second+'s'}}</view>
+      </view>
+    </view>
+    <view class="tips">持卡人信息（请正确填写，以保证会员福利能准确送达）</view>
+    <view class="rowIpt">
+      <view class="lables">持卡人</view>
+      <view class="ipts">
+        <input type="text" class="_txt1" placeholder="请输入真实姓名" name="userName" value="{{ form.userName }}" placeholder-class="setfont"></input>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">身份证</view>
+      <view class="ipts">
+        <input type="text" class="_txt1" name="idcard" value="{{form.idcard}}" placeholder="请输入真实的身份证信息" placeholder-class="setfont"></input>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">性别</view>
+      <view class="ipts">
+        <picker bindchange="bindPickerChange" value="{{index}}" name="sex" range="{{array}}">
+          <view class="picker">
+            <text wx:if="{{sex<3}}" class="txt4 _txt1">{{array[sex]}}</text>
+            <text wx:if="{{sex==3}}" class="txt4">选择持卡人性别</text>
+          </view>
+        </picker>
+        <view class="icons" style="background-image:url({{STATICIMG}}/ic_arrowDown.png)"></view>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">生日</view>
+      <view class="ipts">
+        <picker mode="date" name="brith" value="{{date}}" start="1970-09-01" end="2019-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            <text class="txt4 _txt1">{{date}}</text>
+            <!-- <text wx:if="{{sex==3}}" class="txt4">选择持卡人性别</text> -->
+          </view>
+        </picker>
+        <view class="icons" style="background-image:url({{STATICIMG}}/ic_arrowDown.png)"></view>
+      </view>
+    </view>
+    <view class="tips">邮寄地址（用于卡片和会员礼品寄送）</view>
+    <view class="rowIpt">
+      <view class="lables">地址</view>
+      <view class="ipts">
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" name="address">
+          <view class="picker">
+            <text class="txt4 _txt1">{{region[0]}}，{{region[1]}}，{{region[2]}}</text>
+          </view>
+        </picker>
+        <view class="icons" style="background-image:url({{STATICIMG}}/ic_arrowDown.png)"></view>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">详细地址</view>
+      <view class="ipts">
+        <input type="text" class="_txt1" name="deladdress" placeholder="详细地址" placeholder-class="setfont"></input>
+      </view>
+    </view>
+    <view class="tips">偏好选择（选填）</view>
+    <view class="rowIpt">
+      <view class="lables">门店</view>
+      <view class="ipts">
+        <picker bindchange="bindstroeChange" name="mendian" value="{{index}}" range="{{arrayStore}}">
+          <view class="picker">
+            <text class="txt4 _txt1">{{arrayStore[currstroe]}}</text>
+            <!-- <text wx:if="{{sex==3}}" class="txt4">选择持卡人性别</text> -->
+          </view>
+        </picker>
+        <view class="icons" style="background-image:url({{STATICIMG}}/ic_arrowDown.png)"></view>
+      </view>
+    </view>
+    <view class="rowIpt">
+      <view class="lables">课程</view>
+      <view class="ipts">
+        <picker bindchange="binddanceChange" name="kecheng" value="{{index}}" range="{{danceType}}">
+          <view class="picker">
+            <text class="txt4 _txt1">{{danceType[currDance]}}</text>
+            <!-- <text wx:if="{{sex==3}}" class="txt4">选择持卡人性别</text> -->
+          </view>
+        </picker>
+        <view class="icons" style="background-image:url({{STATICIMG}}/ic_arrowDown.png)"></view>
+      </view>
+    </view>
+    <button class="footBox theme" type="primary" formType="submit" >立即开卡</button>
+
+  </view>
+</form>

@@ -1,0 +1,49 @@
+/* pages/usercenter/myintegral/myintegral.wxss */
+.top_padding{
+  padding: 70rpx 0rpx;
+  background-color: #fff;
+}
+.top_padding>.num{font-size:60rpx;font-weight:bold;color:rgba(216,178,123,1);}
+.top_padding>.txt{font-size:26rpx;font-weight:500;color:rgba(148,151,163,1);padding-top:30rpx; }
+
+
+/* pages/Aboutclass/Aboutclass.wxss */
+
+.tab{font-size:30rpx;font-family:PingFang SC;font-weight:500;color:rgba(166,166,169,1);}
+.tab-nav-item{position: relative;font-size:30rpx;font-weight:bold;font-family:PingFang SC;color:rgba(50,51,68,1);}
+.tab-nav-item.tab-active:before {
+    width: 92%;
+    height: 4rpx;
+    position: absolute;
+    left: 50%;
+    bottom: -26rpx;
+    margin-left: -46%;
+    z-index: 4;
+    background:rgba(50,51,68,1);
+    border-radius:2px;
+}
+.tab-nav-item.tabbt:before {
+    width: 92%;
+    height: 1px;
+    position: absolute;
+    left: 50%;bottom: 0rem;
+    margin-left: -46%;
+    z-index: 4;
+    background:rgba(232,232,232,1);
+    border-radius:2px;
+}
+.badge:after, .tab-nav-item.tab-active:before, .tab-nav-item.tabbt:before,.tab-nav-item:not(:last-child):after, .tab-nav:after {
+    content: '';
+}
+
+.list,.tab_list{background:rgba(255,255,255,1);}
+.tab_list{padding: 30rpx 0rpx 27rpx 0rpx;margin-top: 20rpx;border-bottom:solid 1px rgba(235,235,235,1);}
+.tab_list .tab{position: relative;}
+
+
+.list{padding: 36rpx 39rpx 29rpx 39rpx;position: relative;}
+.list .name{font-size:28rpx;font-weight:bold;color:rgba(49,49,52,1);}
+.list .time{font-size:26rpx;font-weight:500;color:rgba(148,151,163,1);padding-top:18rpx; }
+.list .num{font-size:32rpx;font-weight:bold;color:rgba(49,49,52,1);}
+
+.footer{padding: 10rpx 0rpx;background:rgba(50,51,68,1);font-size:30rpx;font-weight:bold;color:rgba(255,255,255,1);position: fixed;bottom: 0rpx;width: 100%;border-radius: 0rpx;z-index: 999;}

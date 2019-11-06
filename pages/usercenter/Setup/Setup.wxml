@@ -1,0 +1,12 @@
+<!--pages/Setup/Setup.wxml-->
+<view class="list flex-ali">
+  <text class="title flex1">个人头像</text>
+  <!-- <image src="https://img2.woyaogexing.com/2019/10/17/28143e8da4c743178a8458ec71b3700d!400x400.jpeg" class="user_img"></image> -->
+  <image src="./../../../assets/static/ic_arrowRight.png" ></image>
+</view>
+<view class="list flex-ali">
+  <text class="title flex1">昵称</text>
+  <!-- <text class="username">用户名</text> -->
+  <image src="./../../../assets/static/ic_arrowRight.png"></image>
+</view>
+<button class="updata theme">保存</button>

@@ -1,0 +1,10 @@
+<!--pages/usercenter/Paysuccess/Paysuccess.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>充值成功</text>
+</view>
+
+<text class="success_prompt">当前账户余额：6000U点 </text>
+<text class="success_prompt"> 您可以通过U点预约课程和购买会员商品</text>
+<button class="button theme" bindtap="goyueke">去约课</button>
+<button class="no_filling">去会员商城逛逛</button>

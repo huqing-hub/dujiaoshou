@@ -1,0 +1,8 @@
+<!--pages/usercenter/Finishclass/Finishclass.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>完成课程</text>
+</view>
+
+<text class="success_prompt">您辛苦了！课程耗时130:02:34</text>
+<button class="button theme">确定</button>

@@ -1,0 +1,10 @@
+<!--pages/About/Aboutsuccess/Aboutsuccess.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>约课成功</text>
+</view>
+<view class="" ></view>
+<image src="./../../../assets/static/pic_.png"style="width:284rpx;height:226rpx;margin:0rpx auto;display: block;"></image>
+<text class="success_prompt">课程已经进入课表，要按时上课哦~</text>
+<text class="txt">请前往课表查看上课码</text>
+<button class="theme">好的，我知道了</button>

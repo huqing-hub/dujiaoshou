@@ -1,0 +1,16 @@
+/* pages/course/score/score.wxss */
+
+.title{font-size:34rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);padding-top: 49rpx;}
+.title>text:first-child{padding-bottom: 10rpx;}
+.title_content>view{padding-bottom: 30rpx;display: inline-block;border-bottom:2px dotted rgba(207,207,207,1);}
+
+.prompt_txt{padding: 30rpx 40rpx;display: inline-block;}
+.Gradingtype{overflow: hidden;margin-top: 20rpx;padding: 40rpx 30rpx;background-color: #fff;}
+.Gradingtype>text{display: block;}
+.type_txt{font-size:34rpx;text-align: center;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.describe_txt{font-size:22rpx;text-align: center;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);padding-top: 23rpx;}
+
+textarea{width:auto;margin-top:40rpx;height:200rpx;padding: 29rpx 31rpx;display: block;border:1px solid rgba(224,224,224,1);border-radius:10rpx;}
+.textarea{font-size:28rpx;font-weight:500;color:rgba(199,201,207,1);}
+
+.submit{background:rgba(50,51,68,1);border-radius:10rpx;font-size:32rpx;margin: 40rpx 0rpx;font-weight:bold;color:rgba(255,255,255,1);}

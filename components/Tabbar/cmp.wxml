@@ -1,0 +1,12 @@
+<!--components/tabber/cmp.wxml-->
+<view class="setheight" wx:if="!isIponeX"></view>
+<view class="footer {{ isIponeX ? 'iPhone' : '' }}">
+    <view class="tabbar {{ isIponeX ? 'iPhone' : '' }}">
+        <view wx:for="{{tabbarList}}" data-item="item" wx:for-index="idx" class="tabbar_item {{currentIndex == idx ? 'active' : ''}}" data-index="{{idx}}" bindtap="switchBtn">
+            <!-- <view mode="widthFix" style="background-image:url(./../../assets/iconfont/{{currentIndex == idx ? item.icon+'sel' : item.icon+'nor'}}.png)" class="iconbtn"></view> -->
+            <view mode="widthFix" style="background-image:url({{currentIndex == idx?IMG+'/'+item.icon+'sel' : IMG+'/'+item.icon+'nor'}}.png)" class="iconbtn"></view>
+			<text>{{item.text}}</text>
+        </view>
+    </view>
+</view>
+

@@ -1,0 +1,72 @@
+<!--pages/usercenter/invitation/invitation.wxml-->
+<view class='loading' wx:if='{{!isLoad}}'>
+
+</view>
+
+<view class='main' wx:if="{{isLoad}}">
+
+
+<view class="page_box page_{{pageIndex+1}} {{height > 700 ? 'phone_x' : ''}}">
+  <view class='page_img' style="background:url({{resultObj.bgUrl}});background-repeat:no-repeat;background-size:cover;background-position:center center;">
+   
+    <view>
+         <view><text class="tit_1">加入蓝巫师</text></view>
+         <view><text class="tit_2">蜕变出自己最美的颜色</text></view>
+         
+    </view>
+    <view class='card_content'>
+         <image class="card_bg" mode="widthFix" src="{{ resultObj.cardUrl }}"></image>
+         <view class="nick_img">
+            <image src="{{ resultObj.headUrl }}"></image> 
+            <view class='nick_name'>
+                <text>{{resultObj.nick}}</text>
+            </view>        
+         </view>
+         <view class='card_info'>
+              <view><text>亲爱的！</text></view>
+              <view><text>送你一张免费U点券,快来领取吧</text></view>
+         </view>
+         <view class='card_details'>
+              <view class='card_details_top'><text>免费体验卡</text></view>
+              <view class="card_details_bottom"><text>剩余{{resultObj.count}}U点</text><text class='cur_line'>|</text><text>{{resultObj.day}}后到期</text></view>
+         </view>
+         <view class="card_get">
+              <view>
+                  <image src="{{ resultObj.sunUrl }}"></image> 
+              </view>
+              <view>
+                  <view><text>立即扫码领取</text></view>
+                  <view><text>或者长按识别二维码领取</text></view>
+              </view>
+         </view>
+         <view class='share_box'>
+              <view>
+                  <text>立即分享给好友</text>
+              </view>
+              <view catchtap='savePhoto'>
+                  <text>保存海报到相册</text>
+              </view>
+         </view>
+         <view class='share_info'><view><text>已成功推广{{resultObj.person}}人,共获得{{resultObj.count}}U点</text></view><view>查看我的推广列表></view></view>
+    </view>
+
+  </view>
+</view>
+
+</view>
+
+
+
+
+<view>
+  <view class="canvas-mask flex-cen" wx:if="{{photoModal}}" catchtap="hideModal">
+    <view class="content riseShow">
+      <image class="myCanvas" mode="widthFix" src="{{ posterImgUrl }}"></image>
+      <!-- <view class="flex-aro">
+           <view class="btn" bindtap="savePhoto">保存到手机相册</view>
+         </view> -->
+    </view>
+  </view>
+  <canvas canvas-id="myCanvas" id="myCanvas"></canvas>
+  <showModal showModalOption="{{showModalOption}}" bindoperation="operation"></showModal>
+</view>

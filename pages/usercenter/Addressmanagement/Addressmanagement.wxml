@@ -1,0 +1,34 @@
+<!--pages/usercenter/Addressmanagement/Addressmanagement.wxml-->
+<scroll-view>
+  <view class="list flex-ali">
+    <text class="state flex-cen">张</text>
+    <view class="flex1 b_right">
+      <text class="name">张财春</text>
+      <text class="phone">17608480841</text>
+      <text class="default">默认</text>
+      <text class="add">湖南省长沙市岳麓区潇湘中路万科金域缇香小区5冻1304</text>
+    </view>
+    <view class="editor">
+      <navigator url="/pages/usercenter/editorAdd/editorAdd" hover-class="navigator-hover">
+        <text>编辑</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="list flex-ali">
+    <text class="state flex-cen">张</text>
+    <view class="flex1 b_right">
+      <text class="name">张财春</text>
+      <text class="phone">17608480841</text>
+      <text class="default">默认</text>
+      <text class="add">湖南省长沙市岳麓区潇湘中路万科金域缇香小区5冻1304</text>
+    </view>
+    <view class="editor">
+      <navigator url="/pages/usercenter/editorAdd/editorAdd" hover-class="navigator-hover">
+        <text>编辑</text>
+      </navigator>
+    </view>
+  </view>
+  <navigator url="/pages/usercenter/newAdd/newAdd" hover-class="navigator-hover">
+    <button class="new_add">新增收货地址</button>
+  </navigator>
+</scroll-view>

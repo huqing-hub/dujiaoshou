@@ -1,0 +1,30 @@
+/* pages/usercenter/newphone/newphone.wxss */
+
+page{font-family:PingFang SC;background-color: #fff;}
+.body{height:100vh;font-size: 50rpx;padding: 30rpx;}
+.user{top: 10rpx;position: relative;height: 100%;}
+.user .binding_title{color: rgba(148, 151, 163, 1);font-size: 26rpx;font-weight: Bold;}
+.user .binding_txt{margin-bottom: 100rpx;color: rgba(148, 151, 163, 1);padding-top: 18rpx;font-size: 26rpx;display: block;}
+.user>input,.code_content input{font-size: 24rpx;padding: 10rpx 10rpx;height: 50rpx;}
+.user input{padding-left: 51rpx;font-size:28rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);
+}
+.code_content{border-bottom: rgba(235,235,235,1) solid 1px;}
+
+.phone_pla{font-size:28rpx;font-family:PingFang SC;font-weight:bold;color:rgba(199,201,207,1);}
+
+.input_title>image{width: 24rpx;height: 24rpx;}
+.input_title>text{padding-left: 27rpx;font-size:30rpx;font-weight:bold;color:rgba(49,49,52,1);}
+/* .input_title:last-child{margin: 25rpx auto 0rpx auto;} */
+.code_content{position: relative;padding: 10rpx;}
+.code_content .button{color: rgba(49, 49, 52, 1);border-radius: 33rpx;font-size:26rpx;font-weight:bold;}
+.code_content button{border-radius: 33rpx;border: 2rpx solid rgba(199,201,207,1);padding: 0rpx 10rpx;font-weight:bold;width:201rpx;height:66rpx;}
+
+.code_content button,.code_content input{font-size: 24rpx;}
+.tab-active {width: 1rpx;height: 100%;margin-right: 50rpx;border-right: 1px solid red;}
+.login_bt{color: #fff;margin: 122rpx auto;font-size: 32rpx;display: block;background:rgba(50,51,68,1);border-radius: 10rpx;}
+
+.Tips_content{position: absolute;bottom: 168rpx;}
+.Tips_content text:first-child{font-weight:bold;color:rgba(148,151,163,1);font-size: 26rpx;display: block;padding-bottom: 30rpx;}
+.Tips_content text:last-child{color:rgba(148,151,163,1);font-size: 24rpx;padding-right: 60rpx;display: inline-block;}
+
+.code{font-size:26rpx;font-family:PingFang SC;font-weight:bold;color:rgba(199,201,207,1);}

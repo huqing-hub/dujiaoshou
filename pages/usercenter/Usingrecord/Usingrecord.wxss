@@ -1,0 +1,11 @@
+/* pages/usercenter/Usingrecord/Usingrecord.wxss */
+
+
+.teacher{padding: 30rpx 20rpx;background-color: #fff;margin: 20rpx 30rpx;border-radius:10rpx;}
+.teacher>image{width:180rpx;height:140rpx;border-radius:10rpx;margin-right: 30rpx;}
+.teacher .name{font-size:28rpx;font-weight:bold;color:rgba(50,51,68,1);}
+.teacher .type{padding-top: 19rpx;font-size:22rpx;font-weight:500;color:rgba(180,180,180,1);}
+.teacher .price{font-size:26rpx;font-weight:bold;color:rgba(50,51,68,1);}
+.button{width:120rpx;height:56rpx;background:rgba(199,201,207,1);border-radius:10rpx;font-size:26rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);}
+.teacher .this{background:rgba(216,178,123,1);}
+

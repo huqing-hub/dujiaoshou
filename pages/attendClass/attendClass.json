@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+	  "qc-Tabbar": "/components/Tabbar/cmp"
+  },
+  "navigationBarTitleText": "",
+  "navigationBarBackgroundColor": "#323344"
+}

@@ -1,0 +1,26 @@
+/* pages/About/Chooseteacher/Chooseteacher.wxss */
+.shop_name{font-size:26rpx;font-family:PingFang SC;font-weight:500;color:rgba(49,49,52,1);padding: 30rpx 40rpx;display: block;}
+
+.teacher{padding: 42rpx 30rpx;background-color: #fff;}
+.teacher navigator>image{width:94rpx;height:93rpx;border-radius:50%;margin-right: 24rpx;}
+.teacher .name{font-size:28rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.teacher .type{padding-top: 13rpx;font-size:24rpx;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);}
+.teacher .price{font-size:22rpx;font-family:PingFang SC;font-weight:500;color:rgba(255,199,192,1);border:2rpx solid rgba(255,199,192,1);border-radius:6rpx;margin-left: 18rpx;padding: 8rpx 13rpx;}
+.button{width:120rpx;height:56rpx;line-height:56rpx;background:rgba(199,201,207,1);border-radius:10rpx;font-size:26rpx;font-family:PingFang SC;font-weight:bold;color:rgba(255,255,255,1);}
+.teacher .this{background:rgba(216,178,123,1);}
+
+.tab-nav-item{position: relative;}
+
+.tab-nav-item.tab-active:before {
+    width: 92%;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    margin-left: -46%;
+    z-index: 4;
+    background:rgba(235,235,235,1);
+}
+.badge:after, .tab-nav-item.tab-active:before, .tab-nav-item:not(:last-child):after, .tab-nav:after {
+    content: '';
+}

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Tabbar": "/components/Tabbar/cmp"
+  },
+  "navigationBarTitleText": "课表"
+}

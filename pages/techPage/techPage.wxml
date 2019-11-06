@@ -1,0 +1,47 @@
+<!--pages/techPage/techPage.wxml-->
+<view class="whole">
+   <view class="firInfo">
+		<view class="leftImg" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+		<view class="rightInfo">
+			<text class="tno"> 逗逗老师 </text>
+			<text>673粉丝  |  2343支持 </text>
+			<text>芭蕾舞/爵士舞/街舞 </text>
+		</view>
+		<view class="gzBox theme">关注</view>
+	</view>
+	<view class="techpro">
+		老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍老师介绍
+	</view>
+	<view class="rowBox">
+		<text>预约价格</text>
+		<text>200U点</text>
+	</view>
+	<view class="rowBox rowBox2">
+		<text>目前上课门店</text>
+		<image mode="widthFix" src="{{STATICIMG}}/ic_arrowRight.png" class="jtbtn"></image>
+		<text>华创蚂蚁旗舰店</text>
+	</view>
+	<view class="tabs">
+		<view class="{{currtab==1?'active':''}}" data-tab="1" bindtap="changeTab">作品</view>
+		<view class="{{currtab==2?'active':''}}" data-tab="2" bindtap="changeTab">关注</view>
+		<view class="{{currtab==3?'active':''}}" data-tab="3" bindtap="changeTab">粉丝</view>
+	</view>
+	<!-- 作品 -->
+	<view class="videolist" wx:if="{{currtab==1}}">
+		<view class="videos" wx:for="{{13}}">
+			<view class="topImg" style="background-image:url({{STATICIMG}}/test.jpg)">
+				<image mode="widthFix" src="{{STATICIMG}}/ic_play.png" class="playbtn"></image>
+			</view>
+			<text class="v_name nowrap">舞蹈 战</text>
+			<text class="f_num nowrap">支持：5000</text>
+		</view>
+	</view>
+	<!-- 关注 -->
+	<view class="conlist" wx:if="{{currtab==2||currtab==3}}">
+		<view class="leftbox" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+		<view class="rightbox">
+			<text>张三三</text>
+			<text>支持：5000</text>
+		</view>
+	</view>
+</view>

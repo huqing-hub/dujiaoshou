@@ -1,0 +1,10 @@
+<!--pages/usercenter/successful/successful.wxml-->
+<view class="flex-cen success_TOP">
+  <image src="./../../../assets/static/pic_succeed.png" style="width:60rpx;height:60rpx;"></image>
+  <text>办卡成功</text>
+</view>
+
+<text class="success_prompt">欢迎您加入Unicorn大家庭，从今天开始 做自己的明星</text>
+<button class="button theme" bindtap="buyUdot">购买U点预约上课</button>
+<text class="bt_txt">首次充值赠送UNICORN专属新人礼包</text>
+<button class="no_filling">暂不充值</button>

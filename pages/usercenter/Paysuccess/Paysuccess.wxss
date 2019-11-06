@@ -1,0 +1,14 @@
+/* pages/usercenter/Paysuccess/Paysuccess.wxss */
+page{background-color: #fff;}
+.success_TOP{margin: 120rpx 111rpx;}
+.success_TOP>text{padding-left: 31rpx;font-size:46rpx;font-family:PingFang SC;font-weight:bold;color:rgba(49,49,52,1);}
+.success_prompt,.txt{margin: 0rpx auto;display: block;text-align: center;}
+.success_prompt{padding-top:10rpx;font-size:32rpx;
+font-weight:500;
+color:rgba(49,49,52,1);
+line-height:48rpx;width: 66%;}
+.button{background:rgba(50,51,68,1);border-radius:10rpx;margin: 145rpx 30rpx 0rpx 30rpx;font-weight:bold;color:rgba(255,255,255,1);font-size:32rpx;}
+.txt{font-size:26rpx;font-family:PingFang SC;font-weight:500;color:rgba(148,151,163,1);padding-top: 29rpx;padding-bottom: 143rpx;}
+
+.bt_txt{display: block;text-align: center;padding-top: 21rpx;font-size:26rpx;font-weight:500;color:rgba(148,151,163,1);line-height:36rpx;}
+.no_filling{border:1px solid rgba(50,51,68,1);border-radius:10rpx;font-size:32rpx;font-weight:bold;color:rgba(50,51,68,1);margin: 30rpx 30rpx;}

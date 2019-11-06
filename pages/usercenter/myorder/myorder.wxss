@@ -1,0 +1,33 @@
+/* pages/usercenter/myorder/myorder.wxss */
+.list{position: relative;padding: 33rpx 0rpx 27rpx 0rpx; background-color: #fff; }
+.list text{color:rgba(166,166,169,1);font-size:30rpx;font-weight:bold;}
+.tab-nav-item.tab-active:before {
+    width:50%;
+    /* top: 50%; */
+    height: 4rpx;
+    position: absolute;
+    /* right: 18%; */
+    z-index: 4;
+    background:rgba(50,51,68,1);
+    border-radius:2px;
+    bottom: -1rpx;
+}
+.tab-active{color:rgba(50,51,68,1) !important;}
+.badge:after, .tab-nav-item.tab-active:before, .tab-nav-item.tabbt:before,.tab-nav-item:not(:last-child):after, .tab-nav:after {
+    content: '';
+}
+
+.goods{background:rgba(255,255,255,1);margin: 20rpx auto;padding: 30rpx;}
+.goods image{width:150rpx;height:150rpx;border-radius:10rpx;margin-right: 25rpx;}
+.goods .icon{background:rgba(255,163,152,1);border-radius:4rpx;padding: 6rpx 14rpx;font-size:16rpx;
+
+font-weight:500;
+color:rgba(255,255,255,1);}
+.goods .title{font-size:30rpx;font-weight:bold;color:rgba(49,49,52,1);}
+.goods .gauge{font-size:22rpx;font-weight:500;color:rgba(148,151,163,1);}
+.goods text{padding-bottom: 16rpx;display: block;}
+
+.goods .logistics{font-size:28rpx;font-weight:500;color:rgba(150,150,150,1);width:160rpx;height:56rpx;border:1px solid rgba(175,175,175,1);border-radius:10rpx;}
+.goods .confirm{width:160rpx;height:56rpx;border-radius:10rpx;margin-left: 20rpx;font-size:28rpx;font-weight:500;}
+.goods .sig{font-size:28rpx;font-weight:500;color:rgba(49,49,52,1);line-height:34rpx;margin-bottom: 39rpx;margin-top: 37rpx;}
+.top{position: fixed;width: 100%;z-index: 999;}

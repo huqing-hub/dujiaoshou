@@ -1,0 +1,46 @@
+<!--pages/goods/confirmorder/confirmorder.wxml-->
+<view style="background-color: #fff;overflow: hidden;">
+  <view class="adds flex-ali">
+    <image src="./../../../assets/static/ic_location.png" style="width:35rpx;height:39rpx;"></image>
+    <view class="">
+      <text class="name">张琴波</text>
+      <text class="phone">17608480841</text>
+      <text class="txt">湖南省长沙市岳麓区潇湘中路万科金域缇香小区5冻1304</text>
+    </view>
+    <image src="./../../../assets/static/ic_arrowRight.png" style="width:15rpx;height:24rpx;"></image>
+  </view>
+</view>
+<view class="line-height"></view>
+<view class="goods_content flex">
+  <image src=""></image>
+  <view class="flex1">
+    <text class="textoverflow">111111111111111111111111111111111111111111111111111111111</text>
+    <text class="describe">111111111111111111111111111111111111111111111111111111111</text>
+    <text class="prie">￥299U点</text>
+  </view>
+</view>
+<view class="gauge flex-ali">
+  <text class="title">选择数量</text>
+  <text class="flex1 txt_right right">X2</text>
+</view>
+<view class="gauge borders flex-ali">
+  <text class="title">选择数量</text>
+  <text class="flex1 txt_right right">X2</text>
+</view>
+<view class="gauge borders flex-ali">
+  <text class="title">选择数量</text>
+  <text class="flex1 txt_left tos">请简要描述您的需求（50字）</text>
+</view>
+<view class="note flex-ali">
+  <text class="total">共2件商品   小计：</text>
+  <text class="prie">￥698U点</text>
+</view>
+<view class="flex footer">
+  <view class="flex1 flex-cen-col">
+    <text class="prie">￥698U点</text>
+    <text class="available">当前可用U点：5600</text>
+  </view>
+  <navigator url="/pages/usercenter/Paymentverification/Paymentverification" hover-class="navigator-hover">
+  <button class="flex-cen theme">提交订单</button>
+  </navigator>
+</view>

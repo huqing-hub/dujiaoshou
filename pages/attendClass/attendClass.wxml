@@ -1,0 +1,51 @@
+<view class="whole">
+	<view class="hander">{{teachData.courseTitle}}</view>
+	<view class="secendbox">
+		<text class="txt1">{{teachData.courseName}}</text>
+		<text class="txt2">{{teachData.courseTime}}</text>
+		<view class="attendBox" bindtap="sweepYard">
+			<image mode="widthFix" src="{{STATICIMG}}/ic_scan.png" class="saomiao"></image>
+			<text class="txt3">上课考勤</text>
+		</view>
+		<view class="time">{{classTime}}</view>
+		<view class="beginClass" bindtap="beginClass">{{isstart?'结束课程':'开始上课'}}</view>
+	</view>
+	<view class="tabsBox">
+		<view class="leftTab {{currTab==1?'active':''}}" bindtap="changeTabs" data-tab="1">课程内容</view>
+		<view class="rightTab {{currTab==2?'active':''}}" bindtap="changeTabs" data-tab="2">预约学员（15人）</view>
+	</view>
+	<view class="setline"></view>
+	<view wx:if="{{currTab==1}}">
+		<view class="eduBox">教学内容：</view>
+		<view class="eduContent">
+			<text>课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容
+	课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容
+			</text>
+			<text>课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容
+	课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容课程内容
+			</text>
+			</view>
+	</view>
+	<view class="study" wx:if="{{currTab==2}}">
+		<view class="studylist" wx:for="{{Student}}">
+			<view class="leftInfo">
+				<view class="l_img" style="background-image:url({{STATICIMG}}/test.jpg)"></view>
+				<view class="r_info">
+					<text class="nowrap s_name">学员名字</text>
+					<text class="nowrap s_info">已学习4个课时</text>
+				</view>
+			</view>
+			<view class="rightInfo">缺勤</view>
+		</view>
+	</view>
+	<!-- 老师签到弹窗 -->
+	<view class="siginPop" wx:if="{{false}}">
+		<view class="popDel">
+			<image mode="widthFix" src="{{STATICIMG}}/test.jpg" class="s_img"></image>
+			<text class="s_txt1">学员名字</text>
+			<text class="s_txt2">已学习4个课时</text>
+			<view class="s_txt3">确定签到</view>
+		</view>
+	</view>
+	<qc-Tabbar usertype="{{useris}}" oData="{{[]}}" ></qc-Tabbar>
+</view>

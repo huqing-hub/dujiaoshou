@@ -1,0 +1,24 @@
+/* pages/usercenter/logistics/logistics.wxss */
+.Courier,.Orderno,.logistics{background-color: #fff;}
+.state{background:rgba(50,51,68,1);padding: 53rpx 101rpx;}
+.state text{display: block;}
+.state_title{font-size:32rpx;font-weight:bold;color:rgba(255,255,255,1);padding-bottom: 19rpx;}
+.state_sig{font-size:24rpx;font-weight:500;color:rgba(255,255,255,1);}
+
+.Courier>image{width:90rpx;height:90rpx;border-radius:50%;padding: 40rpx 30rpx 31rpx 30rpx;}
+.Courier .name{font-size:28rpx;font-weight:bold;color:rgba(49,49,52,1);}
+.Courier .contact{font-size:20rpx;font-weight:500;color:rgba(49,49,52,1);padding-top: 22rpx;}
+
+.Orderno{padding: 40rpx 31rpx 51rpx 31rpx;border-top:rgba(235,235,235,1) solid 1px;}
+.Orderno button{width:120rpx;height:48rpx;border:1px solid rgba(175,175,175,1);border-radius:10rpx;font-size:24rpx;font-weight:500;color:rgba(150,150,150,1);}
+
+.list{position: relative;padding: 0rpx 32rpx;overflow: hidden;}
+.time text{font-size:18rpx;font-weight:500;color:rgba(148,151,163,1);line-height:26rpx;}
+.time{margin-right: 25rpx;}
+.progress{margin: 0rpx 25rpx 0rpx 21rpx;position: relative;height: 214rpx;width: 1px;background-color: rgba(235,235,235,1);}
+.progress-height{height: 107rpx;}
+.progress text{width: 50rpx;height: 50rpx;background:rgba(204,204,204,1);border-radius:50%;font-size:24rpx;font-weight:500;color:rgba(255,255,255,1);position: absolute;left: -25rpx;top: 38%;}
+.right{margin-left: 21rpx;}
+.add{padding-top: 14rpx;}
+.list .txt,.add{font-size:26rpx;font-weight:500;color:rgba(148,151,163,1);display: block;}
+.logistics{padding: 37rpx 0rpx;margin-top: 20rpx;}

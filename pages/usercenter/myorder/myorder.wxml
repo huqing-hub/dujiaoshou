@@ -1,0 +1,37 @@
+<!--pages/usercenter/myorder/myorder.wxml-->
+<scroll-view>
+  <view class="flex top">
+    <view class="flex1 list txt_center">
+      <text class="{{indexo==0 ? 'tab-nav-item tab-active' : ''}}" bindtap="cut" data-index="0">待付款</text>
+    </view>
+    <view class="flex1 list txt_center">
+      <text class="{{indexo==1 ? 'tab-nav-item tab-active' : ''}}" bindtap="cut" data-index="1">待发货</text>
+    </view>
+    <view class="flex1 list txt_center">
+      <text class="{{indexo==2 ? 'tab-nav-item tab-active' : ''}}" bindtap="cut" data-index="2">待收货</text>
+    </view>
+    <view class="flex1 list txt_center">
+      <text class="{{indexo==3 ? 'tab-nav-item tab-active' : ''}}" bindtap="cut" data-index="3">已完成</text>
+    </view>
+  </view>
+  <view style="height:88rpx;"></view>
+  <view class="goods" wx:for="{{5}}">
+    <navigator url="/pages/usercenter/orderdetails/orderdetails" hover-class="navigator-hover" class="flex">
+      <image src="https://img2.woyaogexing.com/2019/10/15/ed47a235060e40689d18f20cb5fac5d2!400x400.jpeg"></image>
+      <view class="">
+        <text class="title">蚂蚁潮流短袖</text>
+        <text class="gauge">商品简介商品简介商品简介商品简介商品简介商品简</text>
+        <text class="icon" style="display: inline-block;">全国包邮</text>
+      </view>
+    </navigator>
+    <view class="">
+      <text class="txt_right sig">共1件商品   小计：672U点</text>
+      <view class="flex-end">
+        <navigator url="/pages/usercenter/logistics/logistics" hover-class="navigator-hover">
+          <button class="logistics flex-cen">查看物流</button>
+        </navigator>
+        <button class="confirm flex-cen theme_txt theme_border">确认收货</button>
+      </view>
+    </view>
+  </view>
+</scroll-view>

@@ -1,0 +1,78 @@
+<!--pages/usercenter/couponlist/couponlist.wxml-->
+<wxs src="./../../../utils/time.wxs" module="tools" />
+<scroll-view>
+  <text class="total" wx:if="{{listdata.length<=0}}">空空如也</text>
+  <view wx:for="{{listdata}}" wx:for-index="idx" wx:for-item="itemName" wx:if="{{itemName.status!=3}}" class="list {{ itemName.status>1 ? 'not_txt' : ''}}">
+    <view class="top flex">
+      <view class="left">
+        <text class="prie">{{itemName.token}}</text>
+        <text class="u">U点</text>
+        <text class="recharge txt_center">{{itemName.title}}</text>
+
+        <view class="triangle"></view>
+      </view>
+      <view class="right">
+        <text class="title ">{{itemName.type==0 ? '赠送券' : '充值券'}}满{{itemName.fullToken}}U点赠送{{itemName.token}}U点</text>
+        <text class="remark ">{{itemName.desc}}</text>
+      </view>
+
+    </view>
+    <view class="footer flex {{itemName.status<=1 ? 'not' : ''}}" bindtap="useCoupons" data-ticketId="{{itemName.ticketId}}"  data-type="{{itemName.type}}">
+      <text class="time flex1">有效期：{{tools.dateFormat(itemName.startTime,'yyyy.MM.dd hh:mm')}}-{{tools.dateFormat(itemName.endTime,'yyyy.MM.dd hh:mm')}}</text>
+      <text class="status">{{text[itemName.status-1]}}</text>
+      <image src="./../../../assets/static/ic_arrowRight.png" style="width:12rpx;height:21rpx;" wx:if="{{itemName.status>1}}" ></image>
+    </view>
+  </view>
+  <!-- <view class="list ">
+    <view class="top flex">
+      <view class="left">
+        <text class="prie">200</text>
+        <text class="u">U点</text>
+        <text class="recharge txt_center">充值券</text>
+
+        <view class="triangle"></view>
+      </view>
+      <view class="right">
+        <text class="title ">充值满5000U点赠送200U点</text>
+        <text class="remark ">满5000U点使用</text>
+      </view>
+
+    </view>
+    <view class="footer flex ">
+      <text class="time flex1">有效期：2019.09.12-2019.12.12</text>
+      <text class="status">已使用</text>
+    </view>
+
+  </view> -->
+  <!-- <view class="failure tab-nav-item tab-active">
+    <text>已失效的券</text>
+  </view> -->
+  <!-- <view class="list not_txt" >
+
+
+    <view class="top flex" >
+      <view class="left">
+        <text class="prie">{{item.token}}</text>
+        <text class="u">U点</text>
+        <text class="recharge txt_center">{{item.title}}</text>
+
+        <view class="triangle"></view>
+      </view>
+      <view class="right">
+        <text class="title ">{{item.type==0 ? '赠送券' : '充值券'}}满{{item.fullToken}}U点赠送{{item.token}}U点</text>
+        <text class="remark ">{{item.desc}}</text>
+      </view>
+
+    </view>
+    <view class="footer flex">
+      <text class="time flex1">有效期：{{tools.dateFormat(item.startTime,'yyyy.MM.dd hh:mm')}}-{{tools.dateFormat(item.endTime,'yyyy.MM.dd hh:mm')}}</text>
+      <text class="status">{{text[item.status]}}</text>
+    </view>
+  </view> -->
+  <view style="height:100rpx;"></view>
+  <navigator url="/pages/usercenter/Cardexchange/Cardexchange" hover-class="navigator-hover">
+    <button class="bt theme">兑换卡券</button>
+  </navigator>
+
+
+</scroll-view>
