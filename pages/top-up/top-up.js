@@ -42,7 +42,7 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function () {
-
+		this.getUDdots();
 	},
 
 	/**
@@ -124,30 +124,37 @@ Page({
 			}
 			request_01.WXpay(dat).then((res)=>{
 				// console.log(res.data);
-				if (res.data.code =="OK")
-				wx.requestPayment({
-					timeStamp: res.data.time_stamp,
-					nonceStr: res.data.nonce_str,
-					package: res.data.package_value,
-					signType: res.data.sign_type,
-					paySign: res.data.pay_sign,
-					success(res) {
-						wx.showToast({
-							title: '支付成功',
-							icon: 'success',
-							duration: 2000
-						})
-						that.getUDdots();
-						that.getGifts();
-					},
-					fail(res) {
-						wx.showToast({
-							title: '取消支付',
-							icon: 'none',
-							duration: 2000
-						})
-					}
-				})
+				if (res.data.code =="OK"){
+					wx.requestPayment({
+						timeStamp: res.data.time_stamp,
+						nonceStr: res.data.nonce_str,
+						package: res.data.package_value,
+						signType: res.data.sign_type,
+						paySign: res.data.pay_sign,
+						success(res) {
+							wx.showToast({
+								title: '支付成功',
+								icon: 'success',
+								duration: 2000
+							})
+							that.getUDdots();
+							that.getGifts();
+						},
+						fail(res) {
+							wx.showToast({
+								title: '取消支付',
+								icon: 'none',
+								duration: 2000
+							})
+						}
+					})
+				}else{
+					wx.showToast({
+						icon:'none',
+						title: '服务器错误'
+					})
+				}
+				
 			})
 			console.log("微信支付")
 			// tool.jump_nav("/pages/usercenter/Paysuccess/Paysuccess")

@@ -78,7 +78,7 @@ App({
 		ulogin: false,
 		udata: null,
 		tabbar: [{ text: '独角兽', path: '/pages/index/index', icon: 'tab_unicorn_' }, { text: '约课', path: '/pages/About/Aboutclass/Aboutclass', icon: 'tab_appointCourse_' }, { text: '课表', path: '/pages/course/schedule/schedule', icon: 'tab_classSchedule_' }, { text: '我的', path: '/pages/usercenter/index/index', icon: 'tab_myCenter_' }],
-		footertab: true,// false学生
+		footertab: false,// false学生
 		loginNum: 0,//登录失败重新登录次数
 		STATICIMG: "https://game.flyh5.cn/resources/game/wechat/yls/djx"
 	}

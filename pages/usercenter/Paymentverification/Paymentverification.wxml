@@ -8,5 +8,5 @@
 
 
 <navigator url="/pages/usercenter/Paysuccess/Paysuccess" hover-class="navigator-hover">
-  <button class="theme">确定</button>
+  <button class="theme" bindtap="yueke">确定</button>
 </navigator>

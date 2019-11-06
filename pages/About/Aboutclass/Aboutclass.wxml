@@ -37,7 +37,7 @@
     <navigator url="/pages/top-up/top-up" hover-class="navigator-hover" wx:if="{{paymeet==3}}">
       <button class="top-up" >去充值</button>
     </navigator>
-    <navigator url="/pages/Paymentverification/Paymentverification" hover-class="navigator-hover" wx:if="{{paymeet==2}}">
+    <navigator url="/pages/usercenter/Paymentverification/Paymentverification" hover-class="navigator-hover" wx:if="{{paymeet==2}}">
       <button class="top-up" >立即支付</button>
     </navigator>
   </view>

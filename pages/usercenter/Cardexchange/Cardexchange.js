@@ -23,7 +23,7 @@ Page({
       success(res) {
         if (res.confirm) {
           api.useCoupon({
-            ticketId: this.data.carddat.ticketId
+            ticketId: _this.data.carddat.ticketId
           }).then((res) => {
             tool.loading_h();
             if (res.data.Code == 200) {

@@ -35,8 +35,8 @@
 	<view class="giftBox">
 		<view wx:for="{{giftList}}" class="setstyle" wx:key="item">
 			<view class="imglist"> 
-				<view class="giftBg" style="background-image:url({{item.image}})"></view>
-				<text class="giftName nowrap">{{item.title}}</text>
+				<view class="giftBg" style="background-image:url({{item.Image}})"></view>
+				<text class="giftName nowrap">{{item.Name}}</text>
 			</view>
 			<view class="addicon">+</view>		
 		</view>

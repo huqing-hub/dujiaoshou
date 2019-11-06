@@ -12,7 +12,7 @@ font-weight:500;color:rgba(255,163,152,1);display: block;margin-top: 20rpx;}
 .right .title{font-size:28rpx;font-weight:500;color:rgba(49,49,52,1);}
 .right .remark{font-size:22rpx;font-weight:500;color:rgba(180,180,180,1);padding-top: 26rpx;display: block;}
 
-.footer .time,.footer .status{font-size:22rpx;font-weight:500;color:rgba(148,151,163,1);}
+.footer .time,.footer .status{font-size:24rpx;font-weight:500;color:rgba(148,151,163,1);}
 
 .bt{font-size:30rpx;font-weight:bold;color:rgba(255,255,255,1);position: fixed;bottom: 0rpx;width: 100%;
 border-radius: 0rpx;padding: 10rpx 0rpx;}
@@ -20,7 +20,7 @@ border-radius: 0rpx;padding: 10rpx 0rpx;}
 .triangle{border-color: #F4F6F9 #fff #fff #fff;border-style: solid;border-width: 15rpx 20rpx 0 20rpx;height: 0;width: 0;position: absolute;right: -20rpx;top: -0.5rpx;}
 
 .not{background:rgba(249,249,249,1) !important;}
-.not>.status{font-size:22rpx;font-weight:500;color:rgba(49,49,52,1);}
+.not>.stsatus{font-size:22rpx;font-weight:500;color:rgba(49,49,52,1);}
 .not>image{margin-left: 13rpx;}
 .not>text:first-child{color:rgba(148,151,163,1);}
 .not>text:last-child{color:rgba(49,49,52,1);}

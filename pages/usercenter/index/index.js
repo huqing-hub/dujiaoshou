@@ -81,7 +81,9 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+	  console.log(app.globalData.ulogin)
     if (app.globalData.ulogin) {
+		console.log("denglu")
       this.getdata();
     }
     //是否为老师

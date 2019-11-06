@@ -41,7 +41,7 @@ Component({
   data: {
     currentIndex:null,
     tabbarList:[],
-    useris:true,
+    useris:false,
     isIponeX:false,
 	IMG: app.globalData.STATICIMG
   },

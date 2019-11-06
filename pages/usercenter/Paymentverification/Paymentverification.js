@@ -1,4 +1,5 @@
 // pages/usercenter/Paymentverification/Paymentverification.js
+const request_01 = require("../../../utils/api/request_01.js");
 Page({
 
   /**
@@ -93,7 +94,16 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
+//   onShareAppMessage: function () {
 
-  }
+//   }
+	yueke(){
+		let dat = {
+			courseSectionId: '1188831408639053824',
+			userId:wx.getStorageSync("userdata").userId
+		}
+		request_01.comYuyue(dat).then((res)=>{
+			console.log(res.data);
+		})
+	}
 })

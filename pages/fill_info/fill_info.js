@@ -45,7 +45,7 @@ Page({
 		userId:wx.getStorageSync("userdata").userId,
 		userName: params.userName,
 		userCardId: params.idcard,
-		sex:params.sex,
+		sex:params.sex==0?1:2,
 		birthday: params.brith,
 		address: params.address.toString() + params.deladdress,
 		storeName: params.mendian > 0 ? this.data.arrayStore[parseInt(params.mendian)]:null,
